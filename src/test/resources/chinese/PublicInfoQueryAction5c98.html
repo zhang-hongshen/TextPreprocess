@@ -1,0 +1,2028 @@
+
+ 
+
+
+
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from jwc.swjtu.edu.cn/vatuu/PublicInfoQueryAction?setAction=queryTerm by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 03 May 2021 13:53:15 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<title>公共信息查询-VATUU为途教学信息服务平台</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="VATUU,为途,教学信息服务平台,教务管理系统,教务网,教务系统" />
+<meta name="description" content="VATUU为途，专注于高等教育信息化，中国领先的教学信息化解决方案服务商" />
+<link rel="stylesheet" type="text/css" href="http://jwc.swjtu.edu.cn/css/web/iecommon.css"/>
+<link rel="stylesheet" type="text/css" href="http://jwc.swjtu.edu.cn/css/web/blueStyle.css"/>
+<!--[if IE 6]>
+<script src="../js/iepng.js" language="javascript" type="text/javascript"></script>
+<![endif]-->
+</head>
+<body>
+		<!--
+        	描述：header部分
+        -->
+		<div class="full header-bg" id="header">
+	<div class="mainBox">
+		<div class="header header-bg clearfix">
+				<div class="fl mt20"><a href="http://jwc.swjtu.edu.cn/index.jsp"><img src="http://jwc.swjtu.edu.cn/images/web/icon/index_logo.png"/></a></div>
+				<div class="fr">
+					<ul class="header-share mt5 clearfix">
+						<li><a href="#" class="relative-btm1">English</a></li>
+						<li class="clearfix"><span class="weixin_icon"></span><a href="javascript:void(0)" id="wechar" onclick="showWechatBox()">微信</a></li>
+						<li class="clearfix"><span class="weibo_icon"></span><a href="http://weibo.com/jiaowu580" target=_blank>微博</a></li>
+					</ul>
+					<div class="searchBox clearfix">
+					    <form action="http://jwc.swjtu.edu.cn/vatuu/WebAction" method="post" name="commSearch" id="commSearch" style="margin:0px;" target=_blank onsubmit="setKeyValue()">
+					    <input type="hidden" name="setAction" value="newsList">
+					    <input type="hidden" name="type" value="form">
+					    <input type="hidden" name="key1" value="">
+					    <input type="hidden" name="keyword" value="">
+					    <input type="hidden" name="keyWord" value="">
+					    <input type="hidden" name="selectType" value="keyWord">
+					    <input type="hidden" name="selectAction" value="QueryName">
+						<div class="fr clearfix">
+							<input type="text" name="kw" value="" class="searchInput fl"  />
+							<div class="searchBtn inline-block fl" onclick="setKeyValue()"><span class="searchBtn-icon fl"></span></div>
+						</div>
+						<div class="fr w180px">
+							<input type="radio" name="searchCommType" value="web"  class="relative2"  checked="checked" onclick="setSearchComm()"/><span class="cwhite">公共</span>&nbsp; 
+							<input type="radio" name="searchCommType" value="course"  class="relative2" onclick="setSearchComm()"/><span class="cwhite">课程</span>&nbsp;
+							<input type="radio" name="searchCommType" value="people"  class="relative2" onclick="setSearchComm()"/><span class="cwhite">找人</span>&nbsp;
+						</div>
+						</form>
+					</div>
+				</div>
+		</div>
+   </div></div>
+		<!--
+        	描述：header部分
+        -->
+        <!--
+        	描述：nav部分
+        -->
+        <div class="full nav-bg mb20" id="nav">
+    <div class="mainBox">
+		<div class="nav clearfix" >
+			<ul>
+			    <li><a href="http://jwc.swjtu.edu.cn/index.html">教务首页</a></li>
+				<li><a href="http://jwc.swjtu.edu.cn/vatuu/WebAction?setAction=commonList&amp;viewType=view&amp;infoType=detail&amp;infoIndex=61E92EF67418DC54">关于教务</a></li>
+				<li><a href="http://jwc.swjtu.edu.cn/vatuu/WebAction?setAction=newsList&amp;viewType=secondStyle&amp;selectType=bigType&amp;bigTypeId=FB2D32BEAD066637&amp;newsType=yes">教学动态</a></li>
+				<li><a href="http://jwc.swjtu.edu.cn/vatuu/WebAction?setAction=newsList&amp;viewType=secondStyle&amp;selectType=bigType&amp;bigTypeId=61E92EF67418DC54&amp;newsType=yes">教务管理</a></li>
+				<li><a href="http://jwc.swjtu.edu.cn/vatuu/WebAction?setAction=newsList&amp;viewType=secondStyle&amp;selectType=bigType&amp;bigTypeId=0E4BF4D36E232918&amp;newsType=yes">教学运行</a></li>
+				<li><a href="http://jwc.swjtu.edu.cn/vatuu/WebAction?setAction=newsList&amp;viewType=secondStyle&amp;selectType=bigType&amp;bigTypeId=79FADCFD4573759D&amp;newsType=yes">教改研究</a></li>
+				<li><a href="http://jwc.swjtu.edu.cn/vatuu/WebAction?setAction=newsList&amp;viewType=secondStyle&amp;selectType=bigType&amp;bigTypeId=42ED96EE3E089C19&amp;newsType=yes">实践教学</a></li>
+				<li><a href="http://jwc.swjtu.edu.cn/vatuu/WebAction?setAction=newsList&amp;viewType=secondStyle&amp;selectType=bigType&amp;bigTypeId=36A0F9DAB7403C19&amp;newsType=yes">质量保障</a></li>
+				<li><a href="http://jwc.swjtu.edu.cn/vatuu/WebAction?setAction=ruleList&amp;viewType=web&amp;selectType=all">管理规定</a></li>
+				<li><a href="http://jwc.swjtu.edu.cn/vatuu/WebAction?setAction=fileList&amp;viewType=web&amp;selectType=all">表格文档</a></li>
+				<li><a href="https://jiaowu.swjtu.edu.cn/vatuu/WebSite?setAction=index" target=_blank>网上办事</a></li>
+			</ul>
+			<a class="wrap_box fl mt10" href="http://jwc.swjtu.edu.cn/web/date.html" target="_blank">
+				<img src="http://jwc.swjtu.edu.cn/images/web/icon/calendar_week_icon.jpg" class="calendar_week_icon"/>第<span id="weekTeach" class="cr f16" ></span>周
+			</a>
+			<dl id="nav_dl">
+				<dd><a href="http://jwc.swjtu.edu.cn/service/login.html" target=_blank val="teacherBox">教师</a></dd>
+				<dd><a href="http://jwc.swjtu.edu.cn/service/login.html" target=_blank val="studentBox">家长</a></dd>
+				<dd><a href="http://jwc.swjtu.edu.cn/service/login.html" target=_blank val="studentBox">学生</a>
+					<span class="navbar-btm-active"></span>
+				</dd>
+			</dl>
+		</div>
+	</div>
+</div>
+		<!--
+        	描述：nav部分
+        -->
+        <!--主要内容区-->
+		<div class="mainBox">
+			<div class="teachInfoMainDiv">
+				<ul class="headerNav clearfix">
+					<li><a href="http://jwc.swjtu.edu.cn/vatuu/PublicInfoQueryAction?setAction=queryCollege">公共信息查询</a></li>
+					<li><a href="http://jwc.swjtu.edu.cn/vatuu/CourseAction?setAction=classroomQuery">空闲教室查询</a></li>
+					<li><a href="http://jwc.swjtu.edu.cn/vatuu/PublicInfoQueryAction?setAction=queryProgram">培养计划查询</a></li>
+					<li><a href="http://jwc.swjtu.edu.cn/vatuu/PublicInfoQueryAction?setAction=queryTeacher">教师信息查询</a></li>
+					<li><a href="http://jwc.swjtu.edu.cn/vatuu/PublicInfoQueryAction?setAction=queryStudent">学生信息查询</a></li>
+					<li><a href="http://jwc.swjtu.edu.cn/vatuu/PublicInfoQueryAction?setAction=queryGraduate">学历学位查询</a></li>
+					<li><a href="http://jwc.swjtu.edu.cn/vatuu/PublicInfoQueryAction?setAction=queryCETScore">四六级成绩</a></li>
+					<li><a href="http://jwc.swjtu.edu.cn/vatuu/CourseAction?setAction=classroomStatus">教室使用状态</a></li>
+					<li class="border_right_none padding_right_none"><a href="http://jwc.swjtu.edu.cn/vatuu/PublicInfoQueryAction?setAction=queryTranscript">成绩单网上验真</a></li>
+				</ul>
+				<div class="teachInfoHeader">
+					<h3 class="bigTitleH3">-公共信息查询-</h3>
+					<p class="mt20 clearfix">
+						<span class="tishi2">相关查询</span> 
+						<span class="tishiBox2 clearfix">
+							<a href="http://jwc.swjtu.edu.cn/vatuu/PublicInfoQueryAction?setAction=queryCollege" class="margin_left_none">教学单位信息</a>
+							<a href="http://jwc.swjtu.edu.cn/vatuu/PublicInfoQueryAction?setAction=queryMajor">专业目录查询</a>
+							<a href="http://jwc.swjtu.edu.cn/vatuu/PublicInfoQueryAction?setAction=queryClass">自然班级信息</a>
+							<a href="http://jwc.swjtu.edu.cn/vatuu/PublicInfoQueryAction?setAction=queryTerm">学期信息</a>
+							<a href="http://jwc.swjtu.edu.cn/vatuu/PublicInfoQueryAction?setAction=queryCourse">课程代码查询</a>
+							<a href="http://jwc.swjtu.edu.cn/vatuu/PublicInfoQueryAction?setAction=queryClassroom">教室信息</a>
+							<a href="http://jwc.swjtu.edu.cn/vatuu/PublicInfoQueryAction?setAction=queryFreshman">新生信息</a>
+							<a href="http://jwc.swjtu.edu.cn/vatuu/PublicInfoQueryAction?setAction=queryStudent">学生基本信息</a>
+							<a href="http://jwc.swjtu.edu.cn/vatuu/PublicInfoQueryAction?setAction=queryTeacher" class="border_right_none">教师目录</a>
+						</span>
+					</p>
+					<p class="mt10 clearfix"><span class="tishi2">查询说明</span> <span class="tishiBox">您可以通过公共信息查询学院、专业、班级、学期、课程等相关信息，但有部分数据需要用户登录后才能查询。</span></p>
+				</div>
+				
+				<table class="table_gray" style="margin-top:15px;" >
+					<tr>
+					    <th  style="height:35px;width:10%;" >序号</th>
+					    <th  style="width:20%;">学期名称</th>
+					    <th  style="width:10%;">学年</th>
+					    <th  style="width:10%;">学期</th>
+					    <th  style="width:20%;">学期开始</th>
+					    <th  style="width:20%;">学期结束</th>
+					    <th  style="width:10%;">是否补考</th>
+					</tr>
+					
+                      
+                      
+                      
+                       
+                      
+                      <tr>
+                       
+                        <td style="height:35px;">1</td>
+                        <td >1991-1992第1学期</td>
+                        <td >1991</td>
+                        <td >1</td>
+                        <td ></td>
+                        <td ></td>
+                        <td >
+                        
+                        <span style="color:#0000ff;">否</span>
+                        
+                        
+                        </td>
+                      </tr>
+                       
+                      
+                      <tr>
+                       
+                        <td style="height:35px;">2</td>
+                        <td >1991-1992第2学期</td>
+                        <td >1991</td>
+                        <td >2</td>
+                        <td ></td>
+                        <td ></td>
+                        <td >
+                        
+                        <span style="color:#0000ff;">否</span>
+                        
+                        
+                        </td>
+                      </tr>
+                       
+                      
+                      <tr>
+                       
+                        <td style="height:35px;">3</td>
+                        <td >1992-1993第1学期</td>
+                        <td >1992</td>
+                        <td >1</td>
+                        <td ></td>
+                        <td ></td>
+                        <td >
+                        
+                        <span style="color:#0000ff;">否</span>
+                        
+                        
+                        </td>
+                      </tr>
+                       
+                      
+                      <tr>
+                       
+                        <td style="height:35px;">4</td>
+                        <td >1992-1993第2学期</td>
+                        <td >1992</td>
+                        <td >2</td>
+                        <td ></td>
+                        <td ></td>
+                        <td >
+                        
+                        <span style="color:#0000ff;">否</span>
+                        
+                        
+                        </td>
+                      </tr>
+                       
+                      
+                      <tr>
+                       
+                        <td style="height:35px;">5</td>
+                        <td >1993-1994第1学期</td>
+                        <td >1993</td>
+                        <td >1</td>
+                        <td ></td>
+                        <td ></td>
+                        <td >
+                        
+                        <span style="color:#0000ff;">否</span>
+                        
+                        
+                        </td>
+                      </tr>
+                       
+                      
+                      <tr>
+                       
+                        <td style="height:35px;">6</td>
+                        <td >1993-1994第2学期</td>
+                        <td >1993</td>
+                        <td >2</td>
+                        <td ></td>
+                        <td ></td>
+                        <td >
+                        
+                        <span style="color:#0000ff;">否</span>
+                        
+                        
+                        </td>
+                      </tr>
+                       
+                      
+                      <tr>
+                       
+                        <td style="height:35px;">7</td>
+                        <td >1994-1995第1学期</td>
+                        <td >1994</td>
+                        <td >1</td>
+                        <td ></td>
+                        <td ></td>
+                        <td >
+                        
+                        <span style="color:#0000ff;">否</span>
+                        
+                        
+                        </td>
+                      </tr>
+                       
+                      
+                      <tr>
+                       
+                        <td style="height:35px;">8</td>
+                        <td >1994-1995第2学期</td>
+                        <td >1994</td>
+                        <td >2</td>
+                        <td ></td>
+                        <td ></td>
+                        <td >
+                        
+                        <span style="color:#0000ff;">否</span>
+                        
+                        
+                        </td>
+                      </tr>
+                       
+                      
+                      <tr>
+                       
+                        <td style="height:35px;">9</td>
+                        <td >1995-1996第1学期</td>
+                        <td >1995</td>
+                        <td >1</td>
+                        <td ></td>
+                        <td ></td>
+                        <td >
+                        
+                        <span style="color:#0000ff;">否</span>
+                        
+                        
+                        </td>
+                      </tr>
+                       
+                      
+                      <tr>
+                       
+                        <td style="height:35px;">10</td>
+                        <td >1995-1996第2学期</td>
+                        <td >1995</td>
+                        <td >2</td>
+                        <td ></td>
+                        <td ></td>
+                        <td >
+                        
+                        <span style="color:#0000ff;">否</span>
+                        
+                        
+                        </td>
+                      </tr>
+                       
+                      
+                      <tr>
+                       
+                        <td style="height:35px;">11</td>
+                        <td >1996-1997第1学期</td>
+                        <td >1996</td>
+                        <td >1</td>
+                        <td ></td>
+                        <td ></td>
+                        <td >
+                        
+                        <span style="color:#0000ff;">否</span>
+                        
+                        
+                        </td>
+                      </tr>
+                       
+                      
+                      <tr>
+                       
+                        <td style="height:35px;">12</td>
+                        <td >1996-1997第2学期</td>
+                        <td >1996</td>
+                        <td >2</td>
+                        <td ></td>
+                        <td ></td>
+                        <td >
+                        
+                        <span style="color:#0000ff;">否</span>
+                        
+                        
+                        </td>
+                      </tr>
+                       
+                      
+                      <tr>
+                       
+                        <td style="height:35px;">13</td>
+                        <td >1997-1998第1学期</td>
+                        <td >1997</td>
+                        <td >1</td>
+                        <td ></td>
+                        <td ></td>
+                        <td >
+                        
+                        <span style="color:#0000ff;">否</span>
+                        
+                        
+                        </td>
+                      </tr>
+                       
+                      
+                      <tr>
+                       
+                        <td style="height:35px;">14</td>
+                        <td >1997-1998第2学期</td>
+                        <td >1997</td>
+                        <td >2</td>
+                        <td ></td>
+                        <td ></td>
+                        <td >
+                        
+                        <span style="color:#0000ff;">否</span>
+                        
+                        
+                        </td>
+                      </tr>
+                       
+                      
+                      <tr>
+                       
+                        <td style="height:35px;">15</td>
+                        <td >1998-1999第1学期</td>
+                        <td >1998</td>
+                        <td >1</td>
+                        <td ></td>
+                        <td ></td>
+                        <td >
+                        
+                        <span style="color:#0000ff;">否</span>
+                        
+                        
+                        </td>
+                      </tr>
+                       
+                      
+                      <tr>
+                       
+                        <td style="height:35px;">16</td>
+                        <td >1998-1999第2学期</td>
+                        <td >1998</td>
+                        <td >2</td>
+                        <td ></td>
+                        <td ></td>
+                        <td >
+                        
+                        <span style="color:#0000ff;">否</span>
+                        
+                        
+                        </td>
+                      </tr>
+                       
+                      
+                      <tr>
+                       
+                        <td style="height:35px;">17</td>
+                        <td >1999-2000第1学期</td>
+                        <td >1999</td>
+                        <td >1</td>
+                        <td ></td>
+                        <td ></td>
+                        <td >
+                        
+                        <span style="color:#0000ff;">否</span>
+                        
+                        
+                        </td>
+                      </tr>
+                       
+                      
+                      <tr>
+                       
+                        <td style="height:35px;">18</td>
+                        <td >1999-2000第2学期</td>
+                        <td >1999</td>
+                        <td >2</td>
+                        <td ></td>
+                        <td ></td>
+                        <td >
+                        
+                        <span style="color:#0000ff;">否</span>
+                        
+                        
+                        </td>
+                      </tr>
+                       
+                      
+                      <tr>
+                       
+                        <td style="height:35px;">19</td>
+                        <td >2000-2001第1学期</td>
+                        <td >2000</td>
+                        <td >1</td>
+                        <td ></td>
+                        <td ></td>
+                        <td >
+                        
+                        <span style="color:#0000ff;">否</span>
+                        
+                        
+                        </td>
+                      </tr>
+                       
+                      
+                      <tr>
+                       
+                        <td style="height:35px;">20</td>
+                        <td >2000-2001第2学期</td>
+                        <td >2000</td>
+                        <td >2</td>
+                        <td ></td>
+                        <td ></td>
+                        <td >
+                        
+                        <span style="color:#0000ff;">否</span>
+                        
+                        
+                        </td>
+                      </tr>
+                       
+                      
+                      <tr>
+                       
+                        <td style="height:35px;">21</td>
+                        <td >2001-2002第1学期</td>
+                        <td >2001</td>
+                        <td >1</td>
+                        <td ></td>
+                        <td ></td>
+                        <td >
+                        
+                        <span style="color:#0000ff;">否</span>
+                        
+                        
+                        </td>
+                      </tr>
+                       
+                      
+                      <tr>
+                       
+                        <td style="height:35px;">22</td>
+                        <td >2001-2002第2学期</td>
+                        <td >2001</td>
+                        <td >2</td>
+                        <td ></td>
+                        <td ></td>
+                        <td >
+                        
+                        <span style="color:#0000ff;">否</span>
+                        
+                        
+                        </td>
+                      </tr>
+                       
+                      
+                      <tr>
+                       
+                        <td style="height:35px;">23</td>
+                        <td >2002-2003第1学期</td>
+                        <td >2002</td>
+                        <td >1</td>
+                        <td ></td>
+                        <td ></td>
+                        <td >
+                        
+                        <span style="color:#0000ff;">否</span>
+                        
+                        
+                        </td>
+                      </tr>
+                       
+                      
+                      <tr>
+                       
+                        <td style="height:35px;">24</td>
+                        <td >2002-2003第2学期</td>
+                        <td >2002</td>
+                        <td >2</td>
+                        <td ></td>
+                        <td ></td>
+                        <td >
+                        
+                        <span style="color:#0000ff;">否</span>
+                        
+                        
+                        </td>
+                      </tr>
+                       
+                      
+                      <tr>
+                       
+                        <td style="height:35px;">25</td>
+                        <td >2003-2004第1学期</td>
+                        <td >2003</td>
+                        <td >1</td>
+                        <td >2003-09-02 00:00:00</td>
+                        <td >2003-12-27 00:00:00</td>
+                        <td >
+                        
+                        <span style="color:#0000ff;">否</span>
+                        
+                        
+                        </td>
+                      </tr>
+                       
+                      
+                      <tr>
+                       
+                        <td style="height:35px;">26</td>
+                        <td >2003-2004第2学期</td>
+                        <td >2003</td>
+                        <td >2</td>
+                        <td >2004-02-16 00:00:00</td>
+                        <td >2004-06-19 00:00:00</td>
+                        <td >
+                        
+                        <span style="color:#0000ff;">否</span>
+                        
+                        
+                        </td>
+                      </tr>
+                       
+                      
+                      <tr>
+                       
+                        <td style="height:35px;">27</td>
+                        <td >2003-2004第3学期</td>
+                        <td >2003</td>
+                        <td >3</td>
+                        <td >2004-07-01 00:00:00</td>
+                        <td >2004-08-20 00:00:00</td>
+                        <td >
+                        
+                        <span style="color:#0000ff;">否</span>
+                        
+                        
+                        </td>
+                      </tr>
+                       
+                      
+                      <tr>
+                       
+                        <td style="height:35px;">28</td>
+                        <td >2003-2004第4学期</td>
+                        <td >2003</td>
+                        <td >4</td>
+                        <td >2004-09-06 00:00:00</td>
+                        <td >2004-09-12 00:00:00</td>
+                        <td >
+                        
+                        <span style="color:#0000ff;">否</span>
+                        
+                        
+                        </td>
+                      </tr>
+                       
+                      
+                      <tr>
+                       
+                        <td style="height:35px;">29</td>
+                        <td >2004-2005第1学期</td>
+                        <td >2004</td>
+                        <td >1</td>
+                        <td >2004-09-13 00:00:00</td>
+                        <td >2005-01-07 00:00:00</td>
+                        <td >
+                        
+                        <span style="color:#0000ff;">否</span>
+                        
+                        
+                        </td>
+                      </tr>
+                       
+                      
+                      <tr>
+                       
+                        <td style="height:35px;">30</td>
+                        <td >2004-2005第2学期</td>
+                        <td >2004</td>
+                        <td >2</td>
+                        <td >2005-02-21 00:00:00</td>
+                        <td >2005-07-03 00:00:00</td>
+                        <td >
+                        
+                        <span style="color:#0000ff;">否</span>
+                        
+                        
+                        </td>
+                      </tr>
+                       
+                      
+                      <tr>
+                       
+                        <td style="height:35px;">31</td>
+                        <td >2004-2005第3学期</td>
+                        <td >2004</td>
+                        <td >3</td>
+                        <td >2005-07-04 00:00:00</td>
+                        <td >2005-09-11 00:00:00</td>
+                        <td >
+                        
+                        <span style="color:#0000ff;">否</span>
+                        
+                        
+                        </td>
+                      </tr>
+                       
+                      
+                      <tr>
+                       
+                        <td style="height:35px;">32</td>
+                        <td >2005-2006第1学期</td>
+                        <td >2005</td>
+                        <td >1</td>
+                        <td >2005-09-12 00:00:00</td>
+                        <td >2006-01-06 00:00:00</td>
+                        <td >
+                        
+                        <span style="color:#0000ff;">否</span>
+                        
+                        
+                        </td>
+                      </tr>
+                       
+                      
+                      <tr>
+                       
+                        <td style="height:35px;">33</td>
+                        <td >2005-2006第2学期</td>
+                        <td >2005</td>
+                        <td >2</td>
+                        <td >2006-02-20 00:00:00</td>
+                        <td >2006-06-18 00:00:00</td>
+                        <td >
+                        
+                        <span style="color:#0000ff;">否</span>
+                        
+                        
+                        </td>
+                      </tr>
+                       
+                      
+                      <tr>
+                       
+                        <td style="height:35px;">34</td>
+                        <td >2005-2006学年第3学期</td>
+                        <td >2005</td>
+                        <td >3</td>
+                        <td >2006-07-08 00:00:00</td>
+                        <td >2006-09-05 00:00:00</td>
+                        <td >
+                        
+                        <span style="color:#0000ff;">否</span>
+                        
+                        
+                        </td>
+                      </tr>
+                       
+                      
+                      <tr>
+                       
+                        <td style="height:35px;">35</td>
+                        <td >2006-2007第1学期</td>
+                        <td >2006</td>
+                        <td >1</td>
+                        <td >2006-09-11 00:00:00</td>
+                        <td >2007-01-07 00:00:00</td>
+                        <td >
+                        
+                        <span style="color:#0000ff;">否</span>
+                        
+                        
+                        </td>
+                      </tr>
+                       
+                      
+                      <tr>
+                       
+                        <td style="height:35px;">36</td>
+                        <td >2006-2007第2学期</td>
+                        <td >2006</td>
+                        <td >2</td>
+                        <td >2007-03-05 00:00:00</td>
+                        <td >2007-07-01 00:00:00</td>
+                        <td >
+                        
+                        <span style="color:#0000ff;">否</span>
+                        
+                        
+                        </td>
+                      </tr>
+                       
+                      
+                      <tr>
+                       
+                        <td style="height:35px;">37</td>
+                        <td >2007-2008第1学期</td>
+                        <td >2007</td>
+                        <td >1</td>
+                        <td >2007-09-10 00:00:00</td>
+                        <td >2008-01-04 00:00:00</td>
+                        <td >
+                        
+                        <span style="color:#0000ff;">否</span>
+                        
+                        
+                        </td>
+                      </tr>
+                       
+                      
+                      <tr>
+                       
+                        <td style="height:35px;">38</td>
+                        <td >2007-2008第2学期</td>
+                        <td >2007</td>
+                        <td >2</td>
+                        <td >2008-02-25 00:00:00</td>
+                        <td >2008-06-22 00:00:00</td>
+                        <td >
+                        
+                        <span style="color:#0000ff;">否</span>
+                        
+                        
+                        </td>
+                      </tr>
+                       
+                      
+                      <tr>
+                       
+                        <td style="height:35px;">39</td>
+                        <td >2008-2009第1学期</td>
+                        <td >2008</td>
+                        <td >1</td>
+                        <td >2008-09-08 00:00:00</td>
+                        <td ></td>
+                        <td >
+                        
+                        <span style="color:#0000ff;">否</span>
+                        
+                        
+                        </td>
+                      </tr>
+                       
+                      
+                      <tr>
+                       
+                        <td style="height:35px;">40</td>
+                        <td >2008-2009第2学期</td>
+                        <td >2008</td>
+                        <td >2</td>
+                        <td >2009-02-23 00:00:00</td>
+                        <td ></td>
+                        <td >
+                        
+                        <span style="color:#0000ff;">否</span>
+                        
+                        
+                        </td>
+                      </tr>
+                       
+                      
+                      <tr>
+                       
+                        <td style="height:35px;">41</td>
+                        <td >2009-2010第1学期</td>
+                        <td >2009</td>
+                        <td >1</td>
+                        <td >2009-09-07 00:00:00</td>
+                        <td >2010-01-01 00:00:00</td>
+                        <td >
+                        
+                        <span style="color:#0000ff;">否</span>
+                        
+                        
+                        </td>
+                      </tr>
+                       
+                      
+                      <tr>
+                       
+                        <td style="height:35px;">42</td>
+                        <td >2009-2010第2学期</td>
+                        <td >2009</td>
+                        <td >2</td>
+                        <td >2010-03-01 00:00:00</td>
+                        <td ></td>
+                        <td >
+                        
+                        <span style="color:#0000ff;">否</span>
+                        
+                        
+                        </td>
+                      </tr>
+                       
+                      
+                      <tr>
+                       
+                        <td style="height:35px;">43</td>
+                        <td >2010-2011第1学期</td>
+                        <td >2010</td>
+                        <td >1</td>
+                        <td ></td>
+                        <td ></td>
+                        <td >
+                        
+                        <span style="color:#0000ff;">否</span>
+                        
+                        
+                        </td>
+                      </tr>
+                       
+                      
+                      <tr>
+                       
+                        <td style="height:35px;">44</td>
+                        <td >2010-2011第2学期</td>
+                        <td >2010</td>
+                        <td >2</td>
+                        <td >2011-02-28 00:00:00</td>
+                        <td >2011-06-24 00:00:00</td>
+                        <td >
+                        
+                        <span style="color:#0000ff;">否</span>
+                        
+                        
+                        </td>
+                      </tr>
+                       
+                      
+                      <tr>
+                       
+                        <td style="height:35px;">45</td>
+                        <td >2011-2012第1学期</td>
+                        <td >2011</td>
+                        <td >1</td>
+                        <td >2011-08-29 00:00:00</td>
+                        <td >2012-01-17 00:00:00</td>
+                        <td >
+                        
+                        <span style="color:#0000ff;">否</span>
+                        
+                        
+                        </td>
+                      </tr>
+                       
+                      
+                      <tr>
+                       
+                        <td style="height:35px;">46</td>
+                        <td >2011-2012第2学期</td>
+                        <td >2011</td>
+                        <td >2</td>
+                        <td ></td>
+                        <td ></td>
+                        <td >
+                        
+                        <span style="color:#0000ff;">否</span>
+                        
+                        
+                        </td>
+                      </tr>
+                       
+                      
+                      <tr>
+                       
+                        <td style="height:35px;">47</td>
+                        <td >2012-2013第1学期</td>
+                        <td >2012</td>
+                        <td >1</td>
+                        <td >2012-09-03 00:00:00</td>
+                        <td >2013-01-18 00:00:00</td>
+                        <td >
+                        
+                        <span style="color:#0000ff;">否</span>
+                        
+                        
+                        </td>
+                      </tr>
+                       
+                      
+                      <tr>
+                       
+                        <td style="height:35px;">48</td>
+                        <td >2012-2013第2学期</td>
+                        <td >2012</td>
+                        <td >2</td>
+                        <td >2013-02-25 00:00:00</td>
+                        <td >2013-06-21 00:00:00</td>
+                        <td >
+                        
+                        <span style="color:#0000ff;">否</span>
+                        
+                        
+                        </td>
+                      </tr>
+                       
+                      
+                      <tr>
+                       
+                        <td style="height:35px;">49</td>
+                        <td >2013-2014第1学期</td>
+                        <td >2013</td>
+                        <td >1</td>
+                        <td >2013-09-02 00:00:00</td>
+                        <td >2013-12-27 00:00:00</td>
+                        <td >
+                        
+                        <span style="color:#0000ff;">否</span>
+                        
+                        
+                        </td>
+                      </tr>
+                       
+                      
+                      <tr>
+                       
+                        <td style="height:35px;">50</td>
+                        <td >2013-2014第2学期</td>
+                        <td >2013</td>
+                        <td >2</td>
+                        <td >2014-02-24 00:00:00</td>
+                        <td >2013-06-20 00:00:00</td>
+                        <td >
+                        
+                        <span style="color:#0000ff;">否</span>
+                        
+                        
+                        </td>
+                      </tr>
+                       
+                      
+                      <tr>
+                       
+                        <td style="height:35px;">51</td>
+                        <td >2014-2015第1学期</td>
+                        <td >2014</td>
+                        <td >1</td>
+                        <td >2014-09-08 00:00:00</td>
+                        <td >2015-01-04 00:00:00</td>
+                        <td >
+                        
+                        <span style="color:#0000ff;">否</span>
+                        
+                        
+                        </td>
+                      </tr>
+                       
+                      
+                      <tr>
+                       
+                        <td style="height:35px;">52</td>
+                        <td >2014-2015第2学期</td>
+                        <td >2014</td>
+                        <td >2</td>
+                        <td >2015-05-18 00:00:00</td>
+                        <td >2015-07-05 00:00:00</td>
+                        <td >
+                        
+                        <span style="color:#0000ff;">否</span>
+                        
+                        
+                        </td>
+                      </tr>
+                       
+                      
+                      <tr>
+                       
+                        <td style="height:35px;">53</td>
+                        <td >2015-2016第1学期</td>
+                        <td >2015</td>
+                        <td >1</td>
+                        <td >2015-08-31 00:00:00</td>
+                        <td >2015-01-04 00:00:00</td>
+                        <td >
+                        
+                        <span style="color:#0000ff;">否</span>
+                        
+                        
+                        </td>
+                      </tr>
+                       
+                      
+                      <tr>
+                       
+                        <td style="height:35px;">54</td>
+                        <td >2015-2016第2学期</td>
+                        <td >2015</td>
+                        <td >2</td>
+                        <td >2016-02-29 00:00:00</td>
+                        <td >2016-07-08 00:00:00</td>
+                        <td >
+                        
+                        <span style="color:#0000ff;">否</span>
+                        
+                        
+                        </td>
+                      </tr>
+                       
+                      
+                      <tr>
+                       
+                        <td style="height:35px;">55</td>
+                        <td >2016-2017第1学期</td>
+                        <td >2016</td>
+                        <td >1</td>
+                        <td >2016-08-29 00:00:00</td>
+                        <td >2016-12-30 00:00:00</td>
+                        <td >
+                        
+                        <span style="color:#0000ff;">否</span>
+                        
+                        
+                        </td>
+                      </tr>
+                       
+                      
+                      <tr>
+                       
+                        <td style="height:35px;">56</td>
+                        <td >2016-2017第2学期</td>
+                        <td >2016</td>
+                        <td >2</td>
+                        <td >2017-02-27 00:00:00</td>
+                        <td >2017-06-23 00:00:00</td>
+                        <td >
+                        
+                        <span style="color:#0000ff;">否</span>
+                        
+                        
+                        </td>
+                      </tr>
+                       
+                      
+                      <tr>
+                       
+                        <td style="height:35px;">57</td>
+                        <td >2016-2017第2学期毕业班</td>
+                        <td >2016</td>
+                        <td >3</td>
+                        <td >2017-04-22 00:00:00</td>
+                        <td >2017-04-23 00:00:00</td>
+                        <td >
+                        
+                        <span style="color:#0000ff;">否</span>
+                        
+                        
+                        </td>
+                      </tr>
+                       
+                      
+                      <tr>
+                       
+                        <td style="height:35px;">58</td>
+                        <td >2017-2018第1学期</td>
+                        <td >2017</td>
+                        <td >1</td>
+                        <td >2017-09-04 00:00:00</td>
+                        <td >2018-01-07 00:00:00</td>
+                        <td >
+                        
+                        <span style="color:#0000ff;">否</span>
+                        
+                        
+                        </td>
+                      </tr>
+                       
+                      
+                      <tr>
+                       
+                        <td style="height:35px;">59</td>
+                        <td >2017-2018第2学期</td>
+                        <td >2017</td>
+                        <td >2</td>
+                        <td >2018-03-05 00:00:00</td>
+                        <td >2018-07-22 00:00:00</td>
+                        <td >
+                        
+                        <span style="color:#0000ff;">否</span>
+                        
+                        
+                        </td>
+                      </tr>
+                       
+                      
+                      <tr>
+                       
+                        <td style="height:35px;">60</td>
+                        <td >2018-2019第1学期</td>
+                        <td >2018</td>
+                        <td >1</td>
+                        <td >2018-09-03 00:00:00</td>
+                        <td >2019-01-06 00:00:00</td>
+                        <td >
+                        
+                        <span style="color:#0000ff;">否</span>
+                        
+                        
+                        </td>
+                      </tr>
+                       
+                      
+                      <tr>
+                       
+                        <td style="height:35px;">61</td>
+                        <td >2018-2019第2学期</td>
+                        <td >2018</td>
+                        <td >2</td>
+                        <td >2019-02-25 00:00:00</td>
+                        <td >2019-06-23 00:00:00</td>
+                        <td >
+                        
+                        <span style="color:#0000ff;">否</span>
+                        
+                        
+                        </td>
+                      </tr>
+                       
+                      
+                      <tr>
+                       
+                        <td style="height:35px;">62</td>
+                        <td >2019-2020第1学期</td>
+                        <td >2019</td>
+                        <td >1</td>
+                        <td >2019-08-26 00:00:00</td>
+                        <td >2019-12-29 00:00:00</td>
+                        <td >
+                        
+                        <span style="color:#0000ff;">否</span>
+                        
+                        
+                        </td>
+                      </tr>
+                       
+                      
+                      <tr>
+                       
+                        <td style="height:35px;">63</td>
+                        <td >2019-2020第2学期</td>
+                        <td >2019</td>
+                        <td >2</td>
+                        <td >2020-02-24 00:00:00</td>
+                        <td >2020-06-21 00:00:00</td>
+                        <td >
+                        
+                        <span style="color:#0000ff;">否</span>
+                        
+                        
+                        </td>
+                      </tr>
+                       
+                      
+                      <tr>
+                       
+                        <td style="height:35px;">64</td>
+                        <td >2019-2020第2学期毕业学期</td>
+                        <td >2019</td>
+                        <td >3</td>
+                        <td >2020-02-24 00:00:00</td>
+                        <td >2020-06-21 00:00:00</td>
+                        <td >
+                        
+                        <span style="color:#0000ff;">否</span>
+                        
+                        
+                        </td>
+                      </tr>
+                       
+                      
+                      <tr>
+                       
+                        <td style="height:35px;">65</td>
+                        <td >2020-2021第1学期</td>
+                        <td >2020</td>
+                        <td >1</td>
+                        <td >2020-09-14 00:00:00</td>
+                        <td >2021-01-10 00:00:00</td>
+                        <td >
+                        
+                        <span style="color:#0000ff;">否</span>
+                        
+                        
+                        </td>
+                      </tr>
+                       
+                      
+                      <tr>
+                       
+                        <td style="height:35px;">66</td>
+                        <td >2020-2021第2学期</td>
+                        <td >2020</td>
+                        <td >2</td>
+                        <td >2021-03-01 00:00:00</td>
+                        <td >2021-06-20 00:00:00</td>
+                        <td >
+                        
+                        <span style="color:#0000ff;">否</span>
+                        
+                        
+                        </td>
+                      </tr>
+                       
+                      
+                      <tr>
+                       
+                        <td style="height:35px;">67</td>
+                        <td >2021-2022第1学期</td>
+                        <td >2021</td>
+                        <td >1</td>
+                        <td ></td>
+                        <td ></td>
+                        <td >
+                        
+                        <span style="color:#0000ff;">否</span>
+                        
+                        
+                        </td>
+                      </tr>
+                       
+                      
+                      <tr>
+                       
+                        <td style="height:35px;">68</td>
+                        <td >2021-2022第2学期</td>
+                        <td >2021</td>
+                        <td >2</td>
+                        <td ></td>
+                        <td ></td>
+                        <td >
+                        
+                        <span style="color:#0000ff;">否</span>
+                        
+                        
+                        </td>
+                      </tr>
+                       
+                      
+                      <tr>
+                       
+                        <td style="height:35px;">69</td>
+                        <td >未知</td>
+                        <td >1990</td>
+                        <td >0</td>
+                        <td ></td>
+                        <td ></td>
+                        <td >
+                        
+                        <span style="color:#0000ff;">否</span>
+                        
+                        
+                        </td>
+                      </tr>
+                       
+                      
+                      <tr>
+                       
+                        <td style="height:35px;">70</td>
+                        <td >2005-2006第1学期补考</td>
+                        <td >2005</td>
+                        <td >1</td>
+                        <td ></td>
+                        <td ></td>
+                        <td >
+                        
+                        
+                        <span style="color:#ff0000;">补考</span>
+                        
+                        </td>
+                      </tr>
+                       
+                      
+                      <tr>
+                       
+                        <td style="height:35px;">71</td>
+                        <td >2005-2006第2学期补考</td>
+                        <td >2005</td>
+                        <td >2</td>
+                        <td >2006-09-06 00:00:00</td>
+                        <td >2006-09-10 00:00:00</td>
+                        <td >
+                        
+                        
+                        <span style="color:#ff0000;">补考</span>
+                        
+                        </td>
+                      </tr>
+                       
+                      
+                      <tr>
+                       
+                        <td style="height:35px;">72</td>
+                        <td >2006-2007第1学期补考</td>
+                        <td >2006</td>
+                        <td >1</td>
+                        <td ></td>
+                        <td ></td>
+                        <td >
+                        
+                        
+                        <span style="color:#ff0000;">补考</span>
+                        
+                        </td>
+                      </tr>
+                       
+                      
+                      <tr>
+                       
+                        <td style="height:35px;">73</td>
+                        <td >2006-2007第2学期补考</td>
+                        <td >2006</td>
+                        <td >2</td>
+                        <td ></td>
+                        <td ></td>
+                        <td >
+                        
+                        
+                        <span style="color:#ff0000;">补考</span>
+                        
+                        </td>
+                      </tr>
+                       
+                      
+                      <tr>
+                       
+                        <td style="height:35px;">74</td>
+                        <td >2007-2008第1学期补考</td>
+                        <td >2007</td>
+                        <td >1</td>
+                        <td >2008-02-22 00:00:00</td>
+                        <td >2008-02-24 00:00:00</td>
+                        <td >
+                        
+                        
+                        <span style="color:#ff0000;">补考</span>
+                        
+                        </td>
+                      </tr>
+                       
+                      
+                      <tr>
+                       
+                        <td style="height:35px;">75</td>
+                        <td >2007-2008第2学期毕业班</td>
+                        <td >2007</td>
+                        <td >2</td>
+                        <td ></td>
+                        <td ></td>
+                        <td >
+                        
+                        
+                        <span style="color:#ff0000;">补考</span>
+                        
+                        </td>
+                      </tr>
+                       
+                      
+                      <tr>
+                       
+                        <td style="height:35px;">76</td>
+                        <td >2007-2008第2学期补考</td>
+                        <td >2007</td>
+                        <td >2</td>
+                        <td ></td>
+                        <td ></td>
+                        <td >
+                        
+                        
+                        <span style="color:#ff0000;">补考</span>
+                        
+                        </td>
+                      </tr>
+                       
+                      
+                      <tr>
+                       
+                        <td style="height:35px;">77</td>
+                        <td >2008-2009第1学期补考</td>
+                        <td >2008</td>
+                        <td >1</td>
+                        <td >2008-09-10 00:00:00</td>
+                        <td ></td>
+                        <td >
+                        
+                        
+                        <span style="color:#ff0000;">补考</span>
+                        
+                        </td>
+                      </tr>
+                       
+                      
+                      <tr>
+                       
+                        <td style="height:35px;">78</td>
+                        <td >2008-2009第2学期补考</td>
+                        <td >2008</td>
+                        <td >2</td>
+                        <td >2009-02-23 00:00:00</td>
+                        <td ></td>
+                        <td >
+                        
+                        
+                        <span style="color:#ff0000;">补考</span>
+                        
+                        </td>
+                      </tr>
+                       
+                      
+                      <tr>
+                       
+                        <td style="height:35px;">79</td>
+                        <td >2009-2010第1学期补考</td>
+                        <td >2009</td>
+                        <td >1</td>
+                        <td ></td>
+                        <td ></td>
+                        <td >
+                        
+                        
+                        <span style="color:#ff0000;">补考</span>
+                        
+                        </td>
+                      </tr>
+                       
+                      
+                      <tr>
+                       
+                        <td style="height:35px;">80</td>
+                        <td >2009-2010第2学期补考</td>
+                        <td >2009</td>
+                        <td >2</td>
+                        <td ></td>
+                        <td ></td>
+                        <td >
+                        
+                        
+                        <span style="color:#ff0000;">补考</span>
+                        
+                        </td>
+                      </tr>
+                       
+                      
+                      <tr>
+                       
+                        <td style="height:35px;">81</td>
+                        <td >2010-2011第1学期补考</td>
+                        <td >2010</td>
+                        <td >1</td>
+                        <td ></td>
+                        <td ></td>
+                        <td >
+                        
+                        
+                        <span style="color:#ff0000;">补考</span>
+                        
+                        </td>
+                      </tr>
+                       
+                      
+                      <tr>
+                       
+                        <td style="height:35px;">82</td>
+                        <td >2010-2011第2学期补考</td>
+                        <td >2010</td>
+                        <td >2</td>
+                        <td ></td>
+                        <td ></td>
+                        <td >
+                        
+                        
+                        <span style="color:#ff0000;">补考</span>
+                        
+                        </td>
+                      </tr>
+                       
+                      
+                      <tr>
+                       
+                        <td style="height:35px;">83</td>
+                        <td >2011-2012第1学期补考</td>
+                        <td >2011</td>
+                        <td >1</td>
+                        <td ></td>
+                        <td ></td>
+                        <td >
+                        
+                        
+                        <span style="color:#ff0000;">补考</span>
+                        
+                        </td>
+                      </tr>
+                       
+                      
+                      <tr>
+                       
+                        <td style="height:35px;">84</td>
+                        <td >2011-2012第2学期补考</td>
+                        <td >2011</td>
+                        <td >2</td>
+                        <td ></td>
+                        <td ></td>
+                        <td >
+                        
+                        
+                        <span style="color:#ff0000;">补考</span>
+                        
+                        </td>
+                      </tr>
+                       
+                      
+                      <tr>
+                       
+                        <td style="height:35px;">85</td>
+                        <td >2012-2013第1学期补考</td>
+                        <td >2012</td>
+                        <td >1</td>
+                        <td ></td>
+                        <td ></td>
+                        <td >
+                        
+                        
+                        <span style="color:#ff0000;">补考</span>
+                        
+                        </td>
+                      </tr>
+                       
+                      
+                      <tr>
+                       
+                        <td style="height:35px;">86</td>
+                        <td >2012-2013第2学期补考</td>
+                        <td >2012</td>
+                        <td >2</td>
+                        <td ></td>
+                        <td ></td>
+                        <td >
+                        
+                        
+                        <span style="color:#ff0000;">补考</span>
+                        
+                        </td>
+                      </tr>
+                       
+                      
+                      <tr>
+                       
+                        <td style="height:35px;">87</td>
+                        <td >2013-2014第1学期补考</td>
+                        <td >2013</td>
+                        <td >1</td>
+                        <td >2014-02-17 00:00:00</td>
+                        <td >2014-02-24 00:00:00</td>
+                        <td >
+                        
+                        
+                        <span style="color:#ff0000;">补考</span>
+                        
+                        </td>
+                      </tr>
+                       
+                      
+                      <tr>
+                       
+                        <td style="height:35px;">88</td>
+                        <td >2013-2014第2学期补考</td>
+                        <td >2013</td>
+                        <td >2</td>
+                        <td >2014-09-01 00:00:00</td>
+                        <td >2014-09-07 00:00:00</td>
+                        <td >
+                        
+                        
+                        <span style="color:#ff0000;">补考</span>
+                        
+                        </td>
+                      </tr>
+                       
+                      
+                      <tr>
+                       
+                        <td style="height:35px;">89</td>
+                        <td >2014-2015第1学期补考</td>
+                        <td >2014</td>
+                        <td >1</td>
+                        <td >2015-03-02 00:00:00</td>
+                        <td >2015-03-04 00:00:00</td>
+                        <td >
+                        
+                        
+                        <span style="color:#ff0000;">补考</span>
+                        
+                        </td>
+                      </tr>
+                       
+                      
+                      <tr>
+                       
+                        <td style="height:35px;">90</td>
+                        <td >2014-2015第2学期补考</td>
+                        <td >2014</td>
+                        <td >2</td>
+                        <td >2015-03-09 00:00:00</td>
+                        <td >2015-08-25 00:00:00</td>
+                        <td >
+                        
+                        
+                        <span style="color:#ff0000;">补考</span>
+                        
+                        </td>
+                      </tr>
+                       
+                      
+                      <tr>
+                       
+                        <td style="height:35px;">91</td>
+                        <td >2015-2016第1学期补考</td>
+                        <td >2015</td>
+                        <td >1</td>
+                        <td >2016-02-24 00:00:00</td>
+                        <td >2016-02-28 00:00:00</td>
+                        <td >
+                        
+                        
+                        <span style="color:#ff0000;">补考</span>
+                        
+                        </td>
+                      </tr>
+                       
+                      
+                      <tr>
+                       
+                        <td style="height:35px;">92</td>
+                        <td >2015-2016第2学期补考</td>
+                        <td >2015</td>
+                        <td >2</td>
+                        <td >2016-08-24 00:00:00</td>
+                        <td >2016-08-26 00:00:00</td>
+                        <td >
+                        
+                        
+                        <span style="color:#ff0000;">补考</span>
+                        
+                        </td>
+                      </tr>
+                       
+                      
+                      <tr>
+                       
+                        <td style="height:35px;">93</td>
+                        <td >2016-2017第1学期补考</td>
+                        <td >2016</td>
+                        <td >1</td>
+                        <td >2017-02-22 00:00:00</td>
+                        <td >2017-02-25 00:00:00</td>
+                        <td >
+                        
+                        
+                        <span style="color:#ff0000;">补考</span>
+                        
+                        </td>
+                      </tr>
+                       
+                      
+                      <tr>
+                       
+                        <td style="height:35px;">94</td>
+                        <td >2016-2017第2学期补考</td>
+                        <td >2016</td>
+                        <td >2</td>
+                        <td >2017-08-31 00:00:00</td>
+                        <td >2017-09-02 00:00:00</td>
+                        <td >
+                        
+                        
+                        <span style="color:#ff0000;">补考</span>
+                        
+                        </td>
+                      </tr>
+                       
+                      
+                      <tr>
+                       
+                        <td style="height:35px;">95</td>
+                        <td >2017-2018第1学期补考</td>
+                        <td >2017</td>
+                        <td >1</td>
+                        <td ></td>
+                        <td ></td>
+                        <td >
+                        
+                        
+                        <span style="color:#ff0000;">补考</span>
+                        
+                        </td>
+                      </tr>
+                       
+                      
+                      <tr>
+                       
+                        <td style="height:35px;">96</td>
+                        <td >2017-2018第2学期补考</td>
+                        <td >2017</td>
+                        <td >2</td>
+                        <td ></td>
+                        <td ></td>
+                        <td >
+                        
+                        
+                        <span style="color:#ff0000;">补考</span>
+                        
+                        </td>
+                      </tr>
+                       
+                      
+                      <tr>
+                       
+                        <td style="height:35px;">97</td>
+                        <td >2018-2019第1学期补考</td>
+                        <td >2018</td>
+                        <td >1</td>
+                        <td ></td>
+                        <td ></td>
+                        <td >
+                        
+                        
+                        <span style="color:#ff0000;">补考</span>
+                        
+                        </td>
+                      </tr>
+                       
+                      
+                      <tr>
+                       
+                        <td style="height:35px;">98</td>
+                        <td >2018-2019第2学期补考</td>
+                        <td >2018</td>
+                        <td >2</td>
+                        <td ></td>
+                        <td ></td>
+                        <td >
+                        
+                        
+                        <span style="color:#ff0000;">补考</span>
+                        
+                        </td>
+                      </tr>
+                       
+                      
+                      <tr>
+                       
+                        <td style="height:35px;">99</td>
+                        <td >2019-2020第1学期补考</td>
+                        <td >2019</td>
+                        <td >1</td>
+                        <td >1900-01-01 00:00:00</td>
+                        <td >1900-01-01 00:00:00</td>
+                        <td >
+                        
+                        
+                        <span style="color:#ff0000;">补考</span>
+                        
+                        </td>
+                      </tr>
+                       
+                      
+                      <tr>
+                       
+                        <td style="height:35px;">100</td>
+                        <td >2019-2020第2学期补考</td>
+                        <td >2019</td>
+                        <td >2</td>
+                        <td >1900-01-01 00:00:00</td>
+                        <td >1900-01-01 00:00:00</td>
+                        <td >
+                        
+                        
+                        <span style="color:#ff0000;">补考</span>
+                        
+                        </td>
+                      </tr>
+                       
+                      
+                      <tr>
+                       
+                        <td style="height:35px;">101</td>
+                        <td >2020-2021第1学期补考</td>
+                        <td >2020</td>
+                        <td >1</td>
+                        <td ></td>
+                        <td ></td>
+                        <td >
+                        
+                        
+                        <span style="color:#ff0000;">补考</span>
+                        
+                        </td>
+                      </tr>
+                       
+                      
+                      <tr>
+                       
+                        <td style="height:35px;">102</td>
+                        <td >2020-2021第2学期补考</td>
+                        <td >2020</td>
+                        <td >2</td>
+                        <td ></td>
+                        <td ></td>
+                        <td >
+                        
+                        
+                        <span style="color:#ff0000;">补考</span>
+                        
+                        </td>
+                      </tr>
+                       
+                      
+                      <tr>
+                       
+                        <td style="height:35px;">103</td>
+                        <td >2021-2022第1学期补考</td>
+                        <td >2021</td>
+                        <td >1</td>
+                        <td ></td>
+                        <td ></td>
+                        <td >
+                        
+                        
+                        <span style="color:#ff0000;">补考</span>
+                        
+                        </td>
+                      </tr>
+                       
+                      
+                      <tr>
+                       
+                        <td style="height:35px;">104</td>
+                        <td >2021-2022第2学期补考</td>
+                        <td >2021</td>
+                        <td >2</td>
+                        <td ></td>
+                        <td ></td>
+                        <td >
+                        
+                        
+                        <span style="color:#ff0000;">补考</span>
+                        
+                        </td>
+                      </tr>
+                      
+                      
+                     
+				</table>
+				<p class="btmInstructionP" style="line-height:22px;"></p>
+				
+			</div>
+		</div>
+		<!--主要内容区-->
+      
+        <!--
+        	描述：底部导航区
+        -->
+        <div class="full bottom-nav-bg mt20" id="footerNav">
+   <div class="mainBox">
+		<div class="footer-nav-div clearfix">
+			<div class="bottmNavDiv">
+				<p class="f14 fw color-main mb5">热点关注</p>
+				<ul>
+					<li><a href="http://jwc.swjtu.edu.cn/vatuu/CourseAction?setAction=queryCourseList&amp;selectTableType=ThisTerm" target=_blank>本学期课程表</a></li>
+					<li><a href="http://jwc.swjtu.edu.cn/vatuu/CourseAction?setAction=queryCourseList&amp;selectTableType=NextTerm" target=_blank>下学期课程表</a></li>
+					<li><a href="http://jwc.swjtu.edu.cn/vatuu/TestInfoAction?setAction=TestArrange&amp;selectTableType=Test" target=_blank>期末考试安排</a></li>
+					<li><a href="http://jwc.swjtu.edu.cn/vatuu/TestInfoAction?setAction=TestArrange&amp;selectTableType=Makeup" target=_blank>补考安排</a></li>
+					<li><a href="http://jwc.swjtu.edu.cn/vatuu/PublicInfoQueryAction?setAction=queryProgram" >培养计划查询</a></li>
+					<li><a href="http://jwc.swjtu.edu.cn/vatuu/PublicInfoQueryAction?setAction=queryMajor" >专业目录</a></li>
+					<li><a href="http://jwc.swjtu.edu.cn/vatuu/PublicInfoQueryAction?setAction=queryCETScore" target=_blank>四六级成绩查询</a></li>
+					<li><a href="http://jwc.swjtu.edu.cn/vatuu/CourseAction?setAction=queryCourseList&amp;selectTableType=History" target=_blank>历史课程查询</a></li>
+					<li><a href="http://jwc.swjtu.edu.cn/vatuu/CourseAction?setAction=printCourse&amp;termSelect=this" target=_blank>班级、教室课表打印</a></li>
+				</ul>
+			</div>
+			<div class="bottmNavDiv">
+				<p class="f14 fw color-main mb5">信息服务</p>
+				<ul>
+					<li><a href="http://jwc.swjtu.edu.cn/vatuu/PublicInfoQueryAction?setAction=queryGraduate" >学历查询</a></li>
+					<li><a href="http://jwc.swjtu.edu.cn/vatuu/PublicInfoQueryAction?setAction=queryCollege" >学院教务信息</a></li>
+					<li><a href="http://jwc.swjtu.edu.cn/vatuu/PublicInfoQueryAction?setAction=queryStudent" >学生信息查询</a></li>
+					<li><a href="http://jwc.swjtu.edu.cn/vatuu/PublicInfoQueryAction?setAction=queryTeacher" >教师信息查询</a></li>
+					<li><a href="http://jwc.swjtu.edu.cn/vatuu/PublicInfoQueryAction?setAction=queryCourse" >课程代码查询</a></li>
+					<li><a href="http://jwc.swjtu.edu.cn/vatuu/PublicInfoQueryAction?setAction=queryClass" >班级信息查询</a></li>
+					<li><a href="http://jwc.swjtu.edu.cn/vatuu/PublicInfoQueryAction?setAction=queryClassroom" >教室信息查询</a></li>
+					<li><a href="http://jwc.swjtu.edu.cn/vatuu/CourseAction?setAction=classroomStatus">教室使用状态</a></li>
+				</ul>
+			</div>
+			<div class="bottmNavDiv">
+				<p class="f14 fw color-main mb5">办事指南</p>
+				<ul>
+					<li><a href="http://jwc.swjtu.edu.cn/web/deanPerson.html?pageLink=deanPerson" >工作人员介绍</a></li>
+					<li><a href="http://jwc.swjtu.edu.cn/web/deanWork.html?pageLink=deanWork" >办事流程</a></li>
+					<li><a href="http://jwc.swjtu.edu.cn/web/deanPhone.html?pageLink=deanPhone" >教务处电话</a></li>
+					<li><a href="http://jwc.swjtu.edu.cn/vatuu/RuleAction?setAction=RuleMore&amp;type=form" >管理规章制度</a></li>
+					<li><a href="http://jwc.swjtu.edu.cn/vatuu/WebFileAction?setAction=FileMore&amp;type=form" >办事常用表格</a></li>
+					<li><a href="http://jwc.swjtu.edu.cn/vatuu/ClassroomBorrowInfoAction?setAction=classroomLendList" target=_blank>教室借用信息查询</a></li>
+					<li><a href="http://jwc.swjtu.edu.cn/vatuu/ClassroomBorrowInfoAction?setAction=classroomUseChart" target=_blank>教室使用图示</a></li>
+				</ul>
+			</div>
+			<div class="bottmNavDiv">
+				<p class="f14 fw color-main mb5">常用表格</p>
+				<ul>
+					<li><a href="http://jwc.swjtu.edu.cn/vatuu/WebAction?setAction=download&amp;fileType=file&amp;fileId=326BFA8145A2016A" target=_blank>期末试卷模板</a></li>
+					<li><a href="http://jwc.swjtu.edu.cn/vatuu/WebAction?setAction=download&amp;fileType=file&amp;fileId=18E00963806A89BA" target=_blank>教师调课申请表</a></li>
+					<li><a href="http://jwc.swjtu.edu.cn/vatuu/WebAction?setAction=download&amp;fileType=file&amp;fileId=1EA32E57AB14E5BA" target=_blank>学生休学申请表</a></li>
+					<li><a href="http://jwc.swjtu.edu.cn/vatuu/WebAction?setAction=download&amp;fileType=file&amp;fileId=CA2079BF6A8151BB" target=_blank>学生复学申请表</a></li>
+					<li><a href="http://jwc.swjtu.edu.cn/vatuu/WebAction?setAction=download&amp;fileType=file&amp;fileId=BAB0389DD6819732" target=_blank>学生退学申请表</a></li>
+					<li><a href="http://jwc.swjtu.edu.cn/vatuu/WebAction?setAction=download&amp;fileType=file&amp;fileId=D54546309E97CBDF" target=_blank>超学分选课申请表</a></li>
+					<li><a href="http://jwc.swjtu.edu.cn/vatuu/WebAction?setAction=download&amp;fileType=file&amp;fileId=0380707C53D59CD4" target=_blank>成绩复议申请表</a></li>
+					<li><a href="http://jwc.swjtu.edu.cn/vatuu/WebAction?setAction=download&amp;fileType=file&amp;fileId=0AE8F7CF1E96E9A7" target=_blank>游学创新实践学分申请表</a></li>
+					<li><a href="http://jwc.swjtu.edu.cn/vatuu/WebAction?setAction=download&amp;fileType=file&amp;fileId=3FA089F9B836F454" target=_blank>本科生课程替代申请表</a></li>
+				</ul>
+			</div>
+			<div class="bottmNavDiv">
+				<p class="f15 fw color-main mb5">推荐链接</p>
+				<ul>
+					<li><a href="http://www.swjtu.edu.cn/" target=_blank>西南交通大学</a></li>
+					<li><a href="http://yz.swjtu.edu.cn/" target=_blank>西南交通大学研究生招生网</a></li>
+					<li><a href="http://lib.swjtu.edu.cn/" target=_blank>西南交通大学图书馆</a></li>
+					<li><a href="http://jwc.swjtu.edu.cn/vatuu/WebAction?setAction=leedsIndex" target=_blank>西南交大利兹学院教学平台</a></li>
+					<li><a href="http://www.stuvip.com/" target=_blank>西南交通大学第二课堂</a></li>
+					<li><a href="http://www.icourse163.org/" target=_blank>中国大学MOOC</a></li>
+					<li><a href="http://www.xuetangx.com/" target=_blank>学堂在线</a></li>
+					<li><a href="https://www.coursera.org/" target=_blank>Coursera慕课平台</a></li>
+				</ul>
+			</div>
+			<div class="bottmNavDiv2">
+				<div class="btmNavLinkBtn"><a href="http://www.chsi.cn/" target=_blank>教育部学信网</a></div>
+				<div class="btmNavLinkBtn"><a href="http://www.cdgdc.edu.cn/" target=_blank>学位与研究生教育信息网</a></div>
+				<div class="btmNavLinkBtn"><a href="http://jwc.swjtu.edu.cn/vatuu/SyllabusAction?setAction=publicOutLine" target=_blank>课程大纲</a></div>
+				<div class="btmNavLinkBtn"><a href="http://jwc.swjtu.edu.cn/vatuu/SyllabusAction?setAction=publicSyllabus" target=_blank>课程执行大纲</a></div>
+				<div class="btmNavLinkBtn"><a href="https://wannianli.tianqi.com/" target=_blank>万年历</a></div>
+			</div>
+		</div>
+	</div></div>
+        <!--
+        	描述：底部导航区
+        -->
+        <!--
+        	描述：footer底部内容区
+        -->
+        <div class="full header-bg" id="footerInfo">
+   <div class="mainBox">
+		<div class="footer mt2082803 clearfix">
+			<div class="fl mt30"><img src="http://jwc.swjtu.edu.cn/images/web/icon/index_logo2.png" alt="VATUU为途教学信息服务平台" /></div>
+			<div class="fr">
+				<p class="mt30">电话联系学校教务部门请点击此处<a href="http://jwc.swjtu.edu.cn/vatuu/WebAction?setAction=commonList&amp;viewType=view&amp;infoType=detail&amp;infoIndex=36A0F9DAB7403C19">查阅号码</a>，您也可以通过<a href="#">新浪微博</a>或关注官方微信联系我们，如您有对系统的建议，请发至：<a href="mailto:vip@vatuu.com" style="color:#ffffff;">vip@vatuu.com</a></p>
+				<p class="mt10"> © 2018  教学信息服务平台由<a href="http://www.vatuu.com/" target=_blank>VATUU为途</a>提供技术支持&nbsp;&nbsp;网站备案号：<a href="http://www.miitbeian.gov.cn/" target=_blank>蜀ICP备15026398号</a>&nbsp;&nbsp; <img src="http://jwc.swjtu.edu.cn/images/web/icon/baidu_icon.jpg" class="pos-relative-5"/></p>
+			</div>
+		</div>
+	</div></div>
+         <!--
+        	描述：footer底部内容区
+        -->
+        <script src="http://jwc.swjtu.edu.cn/js/jquery/1.12.4/jquery.js" type="text/javascript" charset="utf-8"></script>
+        <script src="http://jwc.swjtu.edu.cn/js/web/load.js" type="text/javascript" charset="utf-8"></script>
+        <script src="http://jwc.swjtu.edu.cn/js/web/baidu.js" type="text/javascript" charset="utf-8"></script>
+</body>
+
+<!-- Mirrored from jwc.swjtu.edu.cn/vatuu/PublicInfoQueryAction?setAction=queryTerm by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 03 May 2021 13:53:15 GMT -->
+</html>

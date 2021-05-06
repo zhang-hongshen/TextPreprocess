@@ -1,0 +1,5419 @@
+
+ 
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from jwc.swjtu.edu.cn/vatuu/CourseAction?setAction=classroomQuery by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 03 May 2021 13:51:07 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<title>空闲教室查询(西南交通大学)-VATUU为途教学信息服务平台</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="VATUU,为途,教学信息服务平台,教务管理系统,教务网,教务系统" />
+<meta name="description" content="VATUU为途，专注于高等教育信息化，中国领先的教学信息化解决方案服务商" />
+<link rel="stylesheet" type="text/css" href="../css/web/iecommon.css"/>
+<link rel="stylesheet" type="text/css" href="../css/web/blueStyle.css"/>
+<!--[if IE 6]>
+<script src="../js/iepng.js" language="javascript" type="text/javascript"></script>
+<![endif]-->
+</head>
+<body onload="ViewSchoolAreaInfo()">
+		<!--
+        	描述：header部分
+        -->
+		<div class="full header-bg" id="header">
+	<div class="mainBox">
+		<div class="header header-bg clearfix">
+				<div class="fl mt20"><a href="../index.jsp"><img src="../images/web/icon/index_logo.png"/></a></div>
+				<div class="fr">
+					<ul class="header-share mt5 clearfix">
+						<li><a href="#" class="relative-btm1">English</a></li>
+						<li class="clearfix"><span class="weixin_icon"></span><a href="javascript:void(0)" id="wechar" onclick="showWechatBox()">微信</a></li>
+						<li class="clearfix"><span class="weibo_icon"></span><a href="http://weibo.com/jiaowu580" target=_blank>微博</a></li>
+					</ul>
+					<div class="searchBox clearfix">
+					    <form action="http://jwc.swjtu.edu.cn/vatuu/WebAction" method="post" name="commSearch" id="commSearch" style="margin:0px;" target=_blank onsubmit="setKeyValue()">
+					    <input type="hidden" name="setAction" value="newsList">
+					    <input type="hidden" name="type" value="form">
+					    <input type="hidden" name="key1" value="">
+					    <input type="hidden" name="keyword" value="">
+					    <input type="hidden" name="keyWord" value="">
+					    <input type="hidden" name="selectType" value="keyWord">
+					    <input type="hidden" name="selectAction" value="QueryName">
+						<div class="fr clearfix">
+							<input type="text" name="kw" value="" class="searchInput fl"  />
+							<div class="searchBtn inline-block fl" onclick="setKeyValue()"><span class="searchBtn-icon fl"></span></div>
+						</div>
+						<div class="fr w180px">
+							<input type="radio" name="searchCommType" value="web"  class="relative2"  checked="checked" onclick="setSearchComm()"/><span class="cwhite">公共</span>&nbsp; 
+							<input type="radio" name="searchCommType" value="course"  class="relative2" onclick="setSearchComm()"/><span class="cwhite">课程</span>&nbsp;
+							<input type="radio" name="searchCommType" value="people"  class="relative2" onclick="setSearchComm()"/><span class="cwhite">找人</span>&nbsp;
+						</div>
+						</form>
+					</div>
+				</div>
+		</div>
+   </div></div>
+		<!--
+        	描述：header部分
+        -->
+        <!--
+        	描述：nav部分
+        -->
+        <div class="full nav-bg mb20" id="nav">
+    <div class="mainBox">
+		<div class="nav clearfix" >
+			<ul>
+			    <li><a href="../index.html">教务首页</a></li>
+				<li><a href="WebAction2490?setAction=commonList&amp;viewType=view&amp;infoType=detail&amp;infoIndex=61E92EF67418DC54">关于教务</a></li>
+				<li><a href="WebAction7fc9.html?setAction=newsList&amp;viewType=secondStyle&amp;selectType=bigType&amp;bigTypeId=FB2D32BEAD066637&amp;newsType=yes">教学动态</a></li>
+				<li><a href="WebAction4f2c.html?setAction=newsList&amp;viewType=secondStyle&amp;selectType=bigType&amp;bigTypeId=61E92EF67418DC54&amp;newsType=yes">教务管理</a></li>
+				<li><a href="WebAction5267?setAction=newsList&amp;viewType=secondStyle&amp;selectType=bigType&amp;bigTypeId=0E4BF4D36E232918&amp;newsType=yes">教学运行</a></li>
+				<li><a href="WebActionef00?setAction=newsList&amp;viewType=secondStyle&amp;selectType=bigType&amp;bigTypeId=79FADCFD4573759D&amp;newsType=yes">教改研究</a></li>
+				<li><a href="WebAction4da9?setAction=newsList&amp;viewType=secondStyle&amp;selectType=bigType&amp;bigTypeId=42ED96EE3E089C19&amp;newsType=yes">实践教学</a></li>
+				<li><a href="WebActionb11f?setAction=newsList&amp;viewType=secondStyle&amp;selectType=bigType&amp;bigTypeId=36A0F9DAB7403C19&amp;newsType=yes">质量保障</a></li>
+				<li><a href="WebAction4fdf?setAction=ruleList&amp;viewType=web&amp;selectType=all">管理规定</a></li>
+				<li><a href="WebAction911d.html?setAction=fileList&amp;viewType=web&amp;selectType=all">表格文档</a></li>
+				<li><a href="https://jiaowu.swjtu.edu.cn/vatuu/WebSite?setAction=index" target=_blank>网上办事</a></li>
+			</ul>
+			<a class="wrap_box fl mt10" href="../web/date.html" target="_blank">
+				<img src="../images/web/icon/calendar_week_icon.jpg" class="calendar_week_icon"/>第<span id="weekTeach" class="cr f16" ></span>周
+			</a>
+			<dl id="nav_dl">
+				<dd><a href="../service/login.html" target=_blank val="teacherBox">教师</a></dd>
+				<dd><a href="../service/login.html" target=_blank val="studentBox">家长</a></dd>
+				<dd><a href="../service/login.html" target=_blank val="studentBox">学生</a>
+					<span class="navbar-btm-active"></span>
+				</dd>
+			</dl>
+		</div>
+	</div>
+</div>
+		<!--
+        	描述：nav部分
+        -->
+        <!--主要内容区-->
+		<div class="mainBox">
+			<div class="teachInfoMainDiv">
+				<ul class="headerNav clearfix">
+					<li><a href="PublicInfoQueryActiona56b.html?setAction=queryCollege">公共信息查询</a></li>
+					<li><a href="CourseAction214c.html?setAction=classroomQuery">空闲教室查询</a></li>
+					<li><a href="PublicInfoQueryAction3850.html?setAction=queryProgram">培养计划查询</a></li>
+					<li><a href="PublicInfoQueryAction8979.html?setAction=queryTeacher">教师信息查询</a></li>
+					<li><a href="PublicInfoQueryAction11a0?setAction=queryStudent">学生信息查询</a></li>
+					<li><a href="PublicInfoQueryAction498a?setAction=queryGraduate">学历学位查询</a></li>
+					<li><a href="PublicInfoQueryAction3656?setAction=queryCETScore">四六级成绩</a></li>
+					<li><a href="CourseAction9ee3?setAction=classroomStatus">教室使用状态</a></li>
+					<li class="border_right_none padding_right_none"><a href="PublicInfoQueryAction3856.html?setAction=queryTranscript">成绩单网上验真</a></li>
+				</ul>
+				<div class="teachInfoHeader">
+	  			<form action="http://jwc.swjtu.edu.cn/vatuu/CourseAction" method=post name=form1>
+	  			<input type="hidden" name="setAction" value="classroomQuery">
+      			<input type="hidden" name="PageAction" value="Query">
+      			<input type="hidden" name="day_time_text" id="day_time_text"  value="0000000000001">
+          			<table border="0" width="100%" cellspacing="0" cellpadding="0" id="table2" height="27">
+							<tr>
+							<td style="height:30px;">
+							当前时间：2021-05-03 21:49:42&nbsp;&nbsp;<b>2020-2021第2学期</b>&nbsp;&nbsp;
+							
+                                                                                              第10周 星期一 13节
+                            
+							</td>
+							</tr>
+							<tr>
+								<td style="height:35px;">条件：
+								   <select size="1" name="school_area_code" id="school_area_code" class="select" style="width:120px;" onchange="ViewBuildingInfo()">
+				                   <option selected value="2">犀浦校区</option>
+				                   </select>
+				                   <select size="1" name="building" id="building" class="select" style="width:120px;">
+							       <option value="">选择教学楼</option>
+							       </select>
+							       <select size="1" name="week_no" class="select" style="width:80px;">
+							       <option value="1" selected>第1周</option>
+							       <option value="2" >第2周</option>
+							       <option value="4" >第3周</option>
+							       <option value="8" >第4周</option>
+							       <option value="16" >第5周</option>
+							       <option value="32" >第6周</option>
+							       <option value="64" >第7周</option>
+							       <option value="128" >第8周</option>
+							       <option value="256" >第9周</option>
+							       <option value="512" >第10周</option>
+							       <option value="1024" >第11周</option>
+							       <option value="2048" >第12周</option>
+							       <option value="4096" >第13周</option>
+							       <option value="8192" >第14周</option>
+							       <option value="16384" >第15周</option>
+							       <option value="32768" >第16周</option>
+							       <option value="65536" >第17周</option>
+							       <option value="131072" >第18周</option>
+							       <option value="262144" >第19周</option>
+							       <option value="524288" >第20周</option>
+							       </select>
+							       <select size="1" name="day_no" class="select" style="width:80px;">
+							       <option value="1" selected>星期一</option>
+							       <option value="2" >星期二</option>
+							       <option value="4" >星期三</option>
+							       <option value="8" >星期四</option>
+							       <option value="16" >星期五</option>
+							       <option value="32" >星期六</option>
+							       <option value="64" >星期日</option>
+							       </select>第
+							       <input type="checkbox" name="day_time1"  id="day_time1" value="ON" class="checkbox" onclick="UpdateFromTime()"/>1
+<input type="checkbox" name="day_time2"  id="day_time2" value="ON" class="checkbox" onclick="UpdateFromTime()"/>2
+<input type="checkbox" name="day_time3"  id="day_time3" value="ON" class="checkbox" onclick="UpdateFromTime()"/>3
+<input type="checkbox" name="day_time4"  id="day_time4" value="ON" class="checkbox" onclick="UpdateFromTime()"/>4
+<input type="checkbox" name="day_time5"  id="day_time5" value="ON" class="checkbox" onclick="UpdateFromTime()"/>5
+<input type="checkbox" name="day_time6"  id="day_time6" value="ON" class="checkbox" onclick="UpdateFromTime()"/>6
+<input type="checkbox" name="day_time7"  id="day_time7" value="ON" class="checkbox" onclick="UpdateFromTime()"/>7
+<input type="checkbox" name="day_time8"  id="day_time8" value="ON" class="checkbox" onclick="UpdateFromTime()"/>8
+<input type="checkbox" name="day_time9"  id="day_time9" value="ON" class="checkbox" onclick="UpdateFromTime()"/>9
+<input type="checkbox" name="day_time10"  id="day_time10" value="ON" class="checkbox" onclick="UpdateFromTime()"/>10
+<input type="checkbox" name="day_time11"  id="day_time11" value="ON" class="checkbox" onclick="UpdateFromTime()"/>11
+<input type="checkbox" name="day_time12"  id="day_time12" value="ON" class="checkbox" onclick="UpdateFromTime()"/>12
+<input type="checkbox" name="day_time13"  id="day_time13" value="ON" class="checkbox" onclick="UpdateFromTime()"/>13
+节<input type="submit" value="查询" name="B1" class="btn btn-blue" style="width:80px;">
+				                </td>
+				            </tr>
+			          </table>
+	                 </form>                    
+				</div>
+				
+                <table class="table_gray" style="margin-top:5px;" >
+				<tr>
+					<th style="width:5%; height:30px;">
+					序号</th>
+					<th style="width:8%; height:30px;">
+					校区</th>
+					<th style="width:10%; height:30px;">
+					教学楼</th>
+					<th style="width:10%; height:30px;">
+					教室名称</th>
+					<th style="width:10%; height:30px;">
+					教室类型</th>
+					<th style="width:8%; height:30px;">
+					容量</th>
+					<th style="width:8%; height:30px;">
+					状态</th>
+					<th style="width:8%; height:30px;">
+					是否可借</th>
+					<th style="width:8%; height:30px;">
+					周次</th>
+					<th style="width:8%; height:30px;">
+					星期</th>
+					<th style="width:8%; height:30px;">
+					节次</th>
+					<!--  <th height="25" width="141" align="center" bgcolor="#F3F3F3">
+					备注</th>-->
+				</tr>
+				
+				<tr>
+					<td >1</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >0号楼</td>
+					<td >
+					<font color="#0000FF">体育馆拉丁</font></td>
+					<td >多媒体</td>
+					<td >60</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=red>不可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">&nbsp;</td> -->
+				</tr>
+				
+				<tr>
+					<td >2</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >11号楼</td>
+					<td >
+					<font color="#0000FF">X11104</font></td>
+					<td >多媒体</td>
+					<td >40</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=red>不可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">交运实验室</td> -->
+				</tr>
+				
+				<tr>
+					<td >3</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >1号楼</td>
+					<td >
+					<font color="#0000FF">X1102</font></td>
+					<td >多媒体</td>
+					<td >35</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">教学研讨室</td> -->
+				</tr>
+				
+				<tr>
+					<td >4</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >1号楼</td>
+					<td >
+					<font color="#0000FF">X1104</font></td>
+					<td >多媒体</td>
+					<td >35</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">教学研讨室</td> -->
+				</tr>
+				
+				<tr>
+					<td >5</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >1号楼</td>
+					<td >
+					<font color="#0000FF">X1105</font></td>
+					<td >多媒体</td>
+					<td >45</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">教学研讨室</td> -->
+				</tr>
+				
+				<tr>
+					<td >6</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >1号楼</td>
+					<td >
+					<font color="#0000FF">X1106</font></td>
+					<td >多媒体</td>
+					<td >35</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">教学研讨室</td> -->
+				</tr>
+				
+				<tr>
+					<td >7</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >1号楼</td>
+					<td >
+					<font color="#0000FF">X1107</font></td>
+					<td >多媒体</td>
+					<td >35</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">教学研讨室</td> -->
+				</tr>
+				
+				<tr>
+					<td >8</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >1号楼</td>
+					<td >
+					<font color="#0000FF">X1115</font></td>
+					<td >多媒体</td>
+					<td >35</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">教学研讨室</td> -->
+				</tr>
+				
+				<tr>
+					<td >9</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >1号楼</td>
+					<td >
+					<font color="#0000FF">X1116</font></td>
+					<td >多媒体</td>
+					<td >35</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">教学研讨室</td> -->
+				</tr>
+				
+				<tr>
+					<td >10</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >1号楼</td>
+					<td >
+					<font color="#0000FF">X1117</font></td>
+					<td >多媒体</td>
+					<td >35</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">教学研讨室</td> -->
+				</tr>
+				
+				<tr>
+					<td >11</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >1号楼</td>
+					<td >
+					<font color="#0000FF">X1119</font></td>
+					<td >多媒体</td>
+					<td >35</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">教学研讨室</td> -->
+				</tr>
+				
+				<tr>
+					<td >12</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >1号楼</td>
+					<td >
+					<font color="#0000FF">X1121</font></td>
+					<td >多媒体</td>
+					<td >50</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=red>不可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">&nbsp;</td> -->
+				</tr>
+				
+				<tr>
+					<td >13</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >1号楼</td>
+					<td >
+					<font color="#0000FF">X1210</font></td>
+					<td >多媒体</td>
+					<td >180</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">阶梯</td> -->
+				</tr>
+				
+				<tr>
+					<td >14</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >1号楼</td>
+					<td >
+					<font color="#0000FF">X1211</font></td>
+					<td >多媒体</td>
+					<td >180</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">阶梯</td> -->
+				</tr>
+				
+				<tr>
+					<td >15</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >1号楼</td>
+					<td >
+					<font color="#0000FF">X1212</font></td>
+					<td >多媒体</td>
+					<td >180</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">阶梯</td> -->
+				</tr>
+				
+				<tr>
+					<td >16</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >1号楼</td>
+					<td >
+					<font color="#0000FF">X1213</font></td>
+					<td >多媒体</td>
+					<td >180</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">阶梯</td> -->
+				</tr>
+				
+				<tr>
+					<td >17</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >1号楼</td>
+					<td >
+					<font color="#0000FF">X1214</font></td>
+					<td >多媒体</td>
+					<td >180</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">阶梯</td> -->
+				</tr>
+				
+				<tr>
+					<td >18</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >1号楼</td>
+					<td >
+					<font color="#0000FF">X1215</font></td>
+					<td >多媒体</td>
+					<td >214</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">椭圆形</td> -->
+				</tr>
+				
+				<tr>
+					<td >19</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >1号楼</td>
+					<td >
+					<font color="#0000FF">X1217</font></td>
+					<td >多媒体</td>
+					<td >100</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">&nbsp;</td> -->
+				</tr>
+				
+				<tr>
+					<td >20</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >1号楼</td>
+					<td >
+					<font color="#0000FF">X1218</font></td>
+					<td >多媒体</td>
+					<td >160</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">阶梯</td> -->
+				</tr>
+				
+				<tr>
+					<td >21</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >1号楼</td>
+					<td >
+					<font color="#0000FF">X1219</font></td>
+					<td >多媒体</td>
+					<td >100</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">&nbsp;</td> -->
+				</tr>
+				
+				<tr>
+					<td >22</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >1号楼</td>
+					<td >
+					<font color="#0000FF">X1220</font></td>
+					<td >多媒体</td>
+					<td >150</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">阶梯</td> -->
+				</tr>
+				
+				<tr>
+					<td >23</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >1号楼</td>
+					<td >
+					<font color="#0000FF">X1221</font></td>
+					<td >多媒体</td>
+					<td >100</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">&nbsp;</td> -->
+				</tr>
+				
+				<tr>
+					<td >24</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >1号楼</td>
+					<td >
+					<font color="#0000FF">X1222</font></td>
+					<td >多媒体</td>
+					<td >150</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">阶梯</td> -->
+				</tr>
+				
+				<tr>
+					<td >25</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >1号楼</td>
+					<td >
+					<font color="#0000FF">X1223</font></td>
+					<td >多媒体</td>
+					<td >100</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">&nbsp;</td> -->
+				</tr>
+				
+				<tr>
+					<td >26</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >1号楼</td>
+					<td >
+					<font color="#0000FF">X1225</font></td>
+					<td >多媒体</td>
+					<td >100</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">&nbsp;</td> -->
+				</tr>
+				
+				<tr>
+					<td >27</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >1号楼</td>
+					<td >
+					<font color="#0000FF">X1226</font></td>
+					<td >多媒体</td>
+					<td >120</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">&nbsp;</td> -->
+				</tr>
+				
+				<tr>
+					<td >28</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >1号楼</td>
+					<td >
+					<font color="#0000FF">X1227</font></td>
+					<td >多媒体</td>
+					<td >100</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">&nbsp;</td> -->
+				</tr>
+				
+				<tr>
+					<td >29</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >1号楼</td>
+					<td >
+					<font color="#0000FF">X1228</font></td>
+					<td >多媒体</td>
+					<td >120</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">&nbsp;</td> -->
+				</tr>
+				
+				<tr>
+					<td >30</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >1号楼</td>
+					<td >
+					<font color="#0000FF">X1229</font></td>
+					<td >多媒体</td>
+					<td >100</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">&nbsp;</td> -->
+				</tr>
+				
+				<tr>
+					<td >31</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >1号楼</td>
+					<td >
+					<font color="#0000FF">X1310</font></td>
+					<td >多媒体</td>
+					<td >180</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">阶梯</td> -->
+				</tr>
+				
+				<tr>
+					<td >32</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >1号楼</td>
+					<td >
+					<font color="#0000FF">X1311</font></td>
+					<td >多媒体</td>
+					<td >180</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">阶梯</td> -->
+				</tr>
+				
+				<tr>
+					<td >33</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >1号楼</td>
+					<td >
+					<font color="#0000FF">X1312</font></td>
+					<td >多媒体</td>
+					<td >180</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">阶梯</td> -->
+				</tr>
+				
+				<tr>
+					<td >34</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >1号楼</td>
+					<td >
+					<font color="#0000FF">X1313</font></td>
+					<td >多媒体</td>
+					<td >180</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">阶梯</td> -->
+				</tr>
+				
+				<tr>
+					<td >35</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >1号楼</td>
+					<td >
+					<font color="#0000FF">X1314</font></td>
+					<td >多媒体</td>
+					<td >180</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">阶梯</td> -->
+				</tr>
+				
+				<tr>
+					<td >36</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >1号楼</td>
+					<td >
+					<font color="#0000FF">X1315</font></td>
+					<td >多媒体</td>
+					<td >214</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">椭圆形</td> -->
+				</tr>
+				
+				<tr>
+					<td >37</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >1号楼</td>
+					<td >
+					<font color="#0000FF">X1318</font></td>
+					<td >多媒体</td>
+					<td >99</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">制图</td> -->
+				</tr>
+				
+				<tr>
+					<td >38</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >1号楼</td>
+					<td >
+					<font color="#0000FF">X1319</font></td>
+					<td >多媒体</td>
+					<td >81</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">制图</td> -->
+				</tr>
+				
+				<tr>
+					<td >39</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >1号楼</td>
+					<td >
+					<font color="#0000FF">X1320</font></td>
+					<td >多媒体</td>
+					<td >99</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">制图</td> -->
+				</tr>
+				
+				<tr>
+					<td >40</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >1号楼</td>
+					<td >
+					<font color="#0000FF">X1321</font></td>
+					<td >多媒体</td>
+					<td >81</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">制图</td> -->
+				</tr>
+				
+				<tr>
+					<td >41</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >1号楼</td>
+					<td >
+					<font color="#0000FF">X1322</font></td>
+					<td >多媒体</td>
+					<td >99</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">制图（机械长条桌，实际120）</td> -->
+				</tr>
+				
+				<tr>
+					<td >42</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >1号楼</td>
+					<td >
+					<font color="#0000FF">X1326</font></td>
+					<td >多媒体</td>
+					<td >120</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">&nbsp;</td> -->
+				</tr>
+				
+				<tr>
+					<td >43</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >1号楼</td>
+					<td >
+					<font color="#0000FF">X1328</font></td>
+					<td >多媒体</td>
+					<td >120</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">&nbsp;</td> -->
+				</tr>
+				
+				<tr>
+					<td >44</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >1号楼</td>
+					<td >
+					<font color="#0000FF">X1412</font></td>
+					<td >多媒体</td>
+					<td >180</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">阶梯</td> -->
+				</tr>
+				
+				<tr>
+					<td >45</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >1号楼</td>
+					<td >
+					<font color="#0000FF">X1413</font></td>
+					<td >多媒体</td>
+					<td >180</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">阶梯</td> -->
+				</tr>
+				
+				<tr>
+					<td >46</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >1号楼</td>
+					<td >
+					<font color="#0000FF">X1414</font></td>
+					<td >多媒体</td>
+					<td >180</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">阶梯</td> -->
+				</tr>
+				
+				<tr>
+					<td >47</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >1号楼</td>
+					<td >
+					<font color="#0000FF">X1415</font></td>
+					<td >多媒体</td>
+					<td >180</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">阶梯</td> -->
+				</tr>
+				
+				<tr>
+					<td >48</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >1号楼</td>
+					<td >
+					<font color="#0000FF">X1416</font></td>
+					<td >多媒体</td>
+					<td >180</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">阶梯</td> -->
+				</tr>
+				
+				<tr>
+					<td >49</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >1号楼</td>
+					<td >
+					<font color="#0000FF">X1512</font></td>
+					<td >多媒体</td>
+					<td >180</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">阶梯</td> -->
+				</tr>
+				
+				<tr>
+					<td >50</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >1号楼</td>
+					<td >
+					<font color="#0000FF">X1513</font></td>
+					<td >多媒体</td>
+					<td >180</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">阶梯</td> -->
+				</tr>
+				
+				<tr>
+					<td >51</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >1号楼</td>
+					<td >
+					<font color="#0000FF">X1514</font></td>
+					<td >多媒体</td>
+					<td >180</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">阶梯</td> -->
+				</tr>
+				
+				<tr>
+					<td >52</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >1号楼</td>
+					<td >
+					<font color="#0000FF">X1515</font></td>
+					<td >多媒体</td>
+					<td >180</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">阶梯</td> -->
+				</tr>
+				
+				<tr>
+					<td >53</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >1号楼</td>
+					<td >
+					<font color="#0000FF">X1516</font></td>
+					<td >多媒体</td>
+					<td >180</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">阶梯</td> -->
+				</tr>
+				
+				<tr>
+					<td >54</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >2号楼</td>
+					<td >
+					<font color="#0000FF">X2105</font></td>
+					<td >多媒体</td>
+					<td >35</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">教学研讨室</td> -->
+				</tr>
+				
+				<tr>
+					<td >55</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >2号楼</td>
+					<td >
+					<font color="#0000FF">X2107</font></td>
+					<td >多媒体</td>
+					<td >35</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">教学研讨室</td> -->
+				</tr>
+				
+				<tr>
+					<td >56</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >2号楼</td>
+					<td >
+					<font color="#0000FF">X2109</font></td>
+					<td >多媒体</td>
+					<td >35</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">教学研讨室</td> -->
+				</tr>
+				
+				<tr>
+					<td >57</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >2号楼</td>
+					<td >
+					<font color="#0000FF">X2121</font></td>
+					<td >多媒体</td>
+					<td >35</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">教学研讨室</td> -->
+				</tr>
+				
+				<tr>
+					<td >58</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >2号楼</td>
+					<td >
+					<font color="#0000FF">X2123B</font></td>
+					<td >多媒体</td>
+					<td >35</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">教学研讨室</td> -->
+				</tr>
+				
+				<tr>
+					<td >59</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >2号楼</td>
+					<td >
+					<font color="#0000FF">X2213</font></td>
+					<td >多媒体</td>
+					<td >175</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">&nbsp;</td> -->
+				</tr>
+				
+				<tr>
+					<td >60</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >2号楼</td>
+					<td >
+					<font color="#0000FF">X2215</font></td>
+					<td >多媒体</td>
+					<td >175</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">&nbsp;</td> -->
+				</tr>
+				
+				<tr>
+					<td >61</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >2号楼</td>
+					<td >
+					<font color="#0000FF">X2216</font></td>
+					<td >多媒体</td>
+					<td >175</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">&nbsp;</td> -->
+				</tr>
+				
+				<tr>
+					<td >62</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >2号楼</td>
+					<td >
+					<font color="#0000FF">X2217</font></td>
+					<td >多媒体</td>
+					<td >175</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">&nbsp;</td> -->
+				</tr>
+				
+				<tr>
+					<td >63</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >2号楼</td>
+					<td >
+					<font color="#0000FF">X2218</font></td>
+					<td >多媒体</td>
+					<td >318</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">&nbsp;</td> -->
+				</tr>
+				
+				<tr>
+					<td >64</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >2号楼</td>
+					<td >
+					<font color="#0000FF">X2220</font></td>
+					<td >多媒体</td>
+					<td >120</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">&nbsp;</td> -->
+				</tr>
+				
+				<tr>
+					<td >65</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >2号楼</td>
+					<td >
+					<font color="#0000FF">X2221</font></td>
+					<td >多媒体</td>
+					<td >100</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">&nbsp;</td> -->
+				</tr>
+				
+				<tr>
+					<td >66</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >2号楼</td>
+					<td >
+					<font color="#0000FF">X2222</font></td>
+					<td >多媒体</td>
+					<td >120</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">&nbsp;</td> -->
+				</tr>
+				
+				<tr>
+					<td >67</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >2号楼</td>
+					<td >
+					<font color="#0000FF">X2223</font></td>
+					<td >多媒体</td>
+					<td >100</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">&nbsp;</td> -->
+				</tr>
+				
+				<tr>
+					<td >68</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >2号楼</td>
+					<td >
+					<font color="#0000FF">X2224</font></td>
+					<td >多媒体</td>
+					<td >120</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">&nbsp;</td> -->
+				</tr>
+				
+				<tr>
+					<td >69</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >2号楼</td>
+					<td >
+					<font color="#0000FF">X2225</font></td>
+					<td >多媒体</td>
+					<td >100</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">&nbsp;</td> -->
+				</tr>
+				
+				<tr>
+					<td >70</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >2号楼</td>
+					<td >
+					<font color="#0000FF">X2226</font></td>
+					<td >多媒体</td>
+					<td >120</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">&nbsp;</td> -->
+				</tr>
+				
+				<tr>
+					<td >71</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >2号楼</td>
+					<td >
+					<font color="#0000FF">X2227</font></td>
+					<td >多媒体</td>
+					<td >100</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">&nbsp;</td> -->
+				</tr>
+				
+				<tr>
+					<td >72</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >2号楼</td>
+					<td >
+					<font color="#0000FF">X2229</font></td>
+					<td >多媒体</td>
+					<td >120</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">120</td> -->
+				</tr>
+				
+				<tr>
+					<td >73</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >2号楼</td>
+					<td >
+					<font color="#0000FF">X2230</font></td>
+					<td >多媒体</td>
+					<td >100</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">100</td> -->
+				</tr>
+				
+				<tr>
+					<td >74</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >2号楼</td>
+					<td >
+					<font color="#0000FF">X2231</font></td>
+					<td >多媒体</td>
+					<td >120</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">120</td> -->
+				</tr>
+				
+				<tr>
+					<td >75</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >2号楼</td>
+					<td >
+					<font color="#0000FF">X2232</font></td>
+					<td >多媒体</td>
+					<td >100</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">100,微格教室</td> -->
+				</tr>
+				
+				<tr>
+					<td >76</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >2号楼</td>
+					<td >
+					<font color="#0000FF">X2233</font></td>
+					<td >多媒体</td>
+					<td >120</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">120</td> -->
+				</tr>
+				
+				<tr>
+					<td >77</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >2号楼</td>
+					<td >
+					<font color="#0000FF">X2316</font></td>
+					<td >多媒体</td>
+					<td >175</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">&nbsp;</td> -->
+				</tr>
+				
+				<tr>
+					<td >78</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >2号楼</td>
+					<td >
+					<font color="#0000FF">X2317</font></td>
+					<td >多媒体</td>
+					<td >175</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">&nbsp;</td> -->
+				</tr>
+				
+				<tr>
+					<td >79</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >2号楼</td>
+					<td >
+					<font color="#0000FF">X2318</font></td>
+					<td >多媒体</td>
+					<td >175</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">&nbsp;</td> -->
+				</tr>
+				
+				<tr>
+					<td >80</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >2号楼</td>
+					<td >
+					<font color="#0000FF">X2319</font></td>
+					<td >多媒体</td>
+					<td >175</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">&nbsp;</td> -->
+				</tr>
+				
+				<tr>
+					<td >81</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >2号楼</td>
+					<td >
+					<font color="#0000FF">X2320</font></td>
+					<td >多媒体</td>
+					<td >175</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">&nbsp;</td> -->
+				</tr>
+				
+				<tr>
+					<td >82</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >2号楼</td>
+					<td >
+					<font color="#0000FF">X2321</font></td>
+					<td >多媒体</td>
+					<td >318</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">&nbsp;</td> -->
+				</tr>
+				
+				<tr>
+					<td >83</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >2号楼</td>
+					<td >
+					<font color="#0000FF">X2323</font></td>
+					<td >多媒体</td>
+					<td >100</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">&nbsp;</td> -->
+				</tr>
+				
+				<tr>
+					<td >84</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >2号楼</td>
+					<td >
+					<font color="#0000FF">X2325</font></td>
+					<td >多媒体</td>
+					<td >100</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">&nbsp;</td> -->
+				</tr>
+				
+				<tr>
+					<td >85</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >2号楼</td>
+					<td >
+					<font color="#0000FF">X2326</font></td>
+					<td >多媒体</td>
+					<td >120</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">&nbsp;</td> -->
+				</tr>
+				
+				<tr>
+					<td >86</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >2号楼</td>
+					<td >
+					<font color="#0000FF">X2327</font></td>
+					<td >多媒体</td>
+					<td >100</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">&nbsp;</td> -->
+				</tr>
+				
+				<tr>
+					<td >87</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >2号楼</td>
+					<td >
+					<font color="#0000FF">X2328</font></td>
+					<td >多媒体</td>
+					<td >120</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">&nbsp;</td> -->
+				</tr>
+				
+				<tr>
+					<td >88</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >2号楼</td>
+					<td >
+					<font color="#0000FF">X2329</font></td>
+					<td >多媒体</td>
+					<td >100</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">&nbsp;</td> -->
+				</tr>
+				
+				<tr>
+					<td >89</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >2号楼</td>
+					<td >
+					<font color="#0000FF">X2330</font></td>
+					<td >多媒体</td>
+					<td >120</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">&nbsp;</td> -->
+				</tr>
+				
+				<tr>
+					<td >90</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >2号楼</td>
+					<td >
+					<font color="#0000FF">X2331</font></td>
+					<td >多媒体</td>
+					<td >120</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">120</td> -->
+				</tr>
+				
+				<tr>
+					<td >91</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >2号楼</td>
+					<td >
+					<font color="#0000FF">X2333</font></td>
+					<td >多媒体</td>
+					<td >120</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">120</td> -->
+				</tr>
+				
+				<tr>
+					<td >92</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >2号楼</td>
+					<td >
+					<font color="#0000FF">X2334</font></td>
+					<td >多媒体</td>
+					<td >100</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">100</td> -->
+				</tr>
+				
+				<tr>
+					<td >93</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >2号楼</td>
+					<td >
+					<font color="#0000FF">X2335</font></td>
+					<td >多媒体</td>
+					<td >120</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">120</td> -->
+				</tr>
+				
+				<tr>
+					<td >94</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >2号楼</td>
+					<td >
+					<font color="#0000FF">X2336</font></td>
+					<td >多媒体</td>
+					<td >100</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">100</td> -->
+				</tr>
+				
+				<tr>
+					<td >95</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >2号楼</td>
+					<td >
+					<font color="#0000FF">X2337</font></td>
+					<td >多媒体</td>
+					<td >120</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">120</td> -->
+				</tr>
+				
+				<tr>
+					<td >96</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >2号楼</td>
+					<td >
+					<font color="#0000FF">X2338</font></td>
+					<td >多媒体</td>
+					<td >35</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">教学研讨室</td> -->
+				</tr>
+				
+				<tr>
+					<td >97</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >2号楼</td>
+					<td >
+					<font color="#0000FF">X2416</font></td>
+					<td >多媒体</td>
+					<td >170</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">长条椅</td> -->
+				</tr>
+				
+				<tr>
+					<td >98</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >2号楼</td>
+					<td >
+					<font color="#0000FF">X2417</font></td>
+					<td >多媒体</td>
+					<td >170</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">长条椅</td> -->
+				</tr>
+				
+				<tr>
+					<td >99</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >2号楼</td>
+					<td >
+					<font color="#0000FF">X2418</font></td>
+					<td >多媒体</td>
+					<td >170</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">长条椅</td> -->
+				</tr>
+				
+				<tr>
+					<td >100</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >2号楼</td>
+					<td >
+					<font color="#0000FF">X2419</font></td>
+					<td >多媒体</td>
+					<td >170</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">长条椅</td> -->
+				</tr>
+				
+				<tr>
+					<td >101</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >2号楼</td>
+					<td >
+					<font color="#0000FF">X2420</font></td>
+					<td >多媒体</td>
+					<td >170</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">长条椅</td> -->
+				</tr>
+				
+				<tr>
+					<td >102</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >2号楼</td>
+					<td >
+					<font color="#0000FF">X2422</font></td>
+					<td >多媒体</td>
+					<td >110</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">长条椅</td> -->
+				</tr>
+				
+				<tr>
+					<td >103</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >2号楼</td>
+					<td >
+					<font color="#0000FF">X2423</font></td>
+					<td >多媒体</td>
+					<td >92</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">长条椅</td> -->
+				</tr>
+				
+				<tr>
+					<td >104</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >2号楼</td>
+					<td >
+					<font color="#0000FF">X2424</font></td>
+					<td >多媒体</td>
+					<td >110</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">长条椅</td> -->
+				</tr>
+				
+				<tr>
+					<td >105</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >2号楼</td>
+					<td >
+					<font color="#0000FF">X2425</font></td>
+					<td >多媒体</td>
+					<td >92</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">长条椅</td> -->
+				</tr>
+				
+				<tr>
+					<td >106</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >2号楼</td>
+					<td >
+					<font color="#0000FF">X2426</font></td>
+					<td >多媒体</td>
+					<td >110</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">长条椅</td> -->
+				</tr>
+				
+				<tr>
+					<td >107</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >2号楼</td>
+					<td >
+					<font color="#0000FF">X2427</font></td>
+					<td >多媒体</td>
+					<td >92</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">长条椅</td> -->
+				</tr>
+				
+				<tr>
+					<td >108</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >2号楼</td>
+					<td >
+					<font color="#0000FF">X2428</font></td>
+					<td >多媒体</td>
+					<td >110</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">长条椅</td> -->
+				</tr>
+				
+				<tr>
+					<td >109</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >2号楼</td>
+					<td >
+					<font color="#0000FF">X2429</font></td>
+					<td >多媒体</td>
+					<td >92</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">长条椅</td> -->
+				</tr>
+				
+				<tr>
+					<td >110</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >2号楼</td>
+					<td >
+					<font color="#0000FF">X2431</font></td>
+					<td >多媒体</td>
+					<td >112</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">112</td> -->
+				</tr>
+				
+				<tr>
+					<td >111</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >2号楼</td>
+					<td >
+					<font color="#0000FF">X2432</font></td>
+					<td >多媒体</td>
+					<td >92</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">92，毕业设计用</td> -->
+				</tr>
+				
+				<tr>
+					<td >112</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >2号楼</td>
+					<td >
+					<font color="#0000FF">X2433</font></td>
+					<td >多媒体</td>
+					<td >112</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">112，毕业设计用</td> -->
+				</tr>
+				
+				<tr>
+					<td >113</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >2号楼</td>
+					<td >
+					<font color="#0000FF">X2435</font></td>
+					<td >多媒体</td>
+					<td >112</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">112，毕业设计用</td> -->
+				</tr>
+				
+				<tr>
+					<td >114</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >2号楼</td>
+					<td >
+					<font color="#0000FF">X2436</font></td>
+					<td >多媒体</td>
+					<td >35</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">教学研讨室</td> -->
+				</tr>
+				
+				<tr>
+					<td >115</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >2号楼</td>
+					<td >
+					<font color="#0000FF">X2437</font></td>
+					<td >多媒体</td>
+					<td >120</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">121，毕业设计用</td> -->
+				</tr>
+				
+				<tr>
+					<td >116</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >2号楼</td>
+					<td >
+					<font color="#0000FF">X2516</font></td>
+					<td >多媒体</td>
+					<td >166</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">长条椅</td> -->
+				</tr>
+				
+				<tr>
+					<td >117</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >2号楼</td>
+					<td >
+					<font color="#0000FF">X2517</font></td>
+					<td >多媒体</td>
+					<td >166</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">长条椅</td> -->
+				</tr>
+				
+				<tr>
+					<td >118</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >2号楼</td>
+					<td >
+					<font color="#0000FF">X2518</font></td>
+					<td >多媒体</td>
+					<td >166</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">长条椅</td> -->
+				</tr>
+				
+				<tr>
+					<td >119</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >2号楼</td>
+					<td >
+					<font color="#0000FF">X2519</font></td>
+					<td >多媒体</td>
+					<td >166</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">长条椅</td> -->
+				</tr>
+				
+				<tr>
+					<td >120</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >2号楼</td>
+					<td >
+					<font color="#0000FF">X2520</font></td>
+					<td >多媒体</td>
+					<td >166</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">长条椅</td> -->
+				</tr>
+				
+				<tr>
+					<td >121</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >2号楼</td>
+					<td >
+					<font color="#0000FF">X2522</font></td>
+					<td >多媒体</td>
+					<td >110</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">长条椅</td> -->
+				</tr>
+				
+				<tr>
+					<td >122</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >2号楼</td>
+					<td >
+					<font color="#0000FF">X2524</font></td>
+					<td >多媒体</td>
+					<td >110</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">长条椅</td> -->
+				</tr>
+				
+				<tr>
+					<td >123</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >2号楼</td>
+					<td >
+					<font color="#0000FF">X2525</font></td>
+					<td >多媒体</td>
+					<td >92</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">长条椅</td> -->
+				</tr>
+				
+				<tr>
+					<td >124</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >2号楼</td>
+					<td >
+					<font color="#0000FF">X2526</font></td>
+					<td >多媒体</td>
+					<td >110</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">长条椅</td> -->
+				</tr>
+				
+				<tr>
+					<td >125</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >2号楼</td>
+					<td >
+					<font color="#0000FF">X2527</font></td>
+					<td >多媒体</td>
+					<td >92</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">长条椅</td> -->
+				</tr>
+				
+				<tr>
+					<td >126</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >2号楼</td>
+					<td >
+					<font color="#0000FF">X2528</font></td>
+					<td >多媒体</td>
+					<td >110</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">长条椅,毕业设计教室</td> -->
+				</tr>
+				
+				<tr>
+					<td >127</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >2号楼</td>
+					<td >
+					<font color="#0000FF">X2529</font></td>
+					<td >多媒体</td>
+					<td >92</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">长条椅</td> -->
+				</tr>
+				
+				<tr>
+					<td >128</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >2号楼</td>
+					<td >
+					<font color="#0000FF">X2530</font></td>
+					<td >多媒体</td>
+					<td >35</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">教学研讨室</td> -->
+				</tr>
+				
+				<tr>
+					<td >129</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >2号楼</td>
+					<td >
+					<font color="#0000FF">X2532</font></td>
+					<td >多媒体</td>
+					<td >92</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">92,毕业设计用</td> -->
+				</tr>
+				
+				<tr>
+					<td >130</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >2号楼</td>
+					<td >
+					<font color="#0000FF">X2533</font></td>
+					<td >多媒体</td>
+					<td >110</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">110,毕业设计用</td> -->
+				</tr>
+				
+				<tr>
+					<td >131</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >2号楼</td>
+					<td >
+					<font color="#0000FF">X2534</font></td>
+					<td >多媒体</td>
+					<td >92</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">92,毕业设计用</td> -->
+				</tr>
+				
+				<tr>
+					<td >132</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >2号楼</td>
+					<td >
+					<font color="#0000FF">X2535</font></td>
+					<td >多媒体</td>
+					<td >110</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">110,毕业设计用</td> -->
+				</tr>
+				
+				<tr>
+					<td >133</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >2号楼</td>
+					<td >
+					<font color="#0000FF">X2536</font></td>
+					<td >多媒体</td>
+					<td >35</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">教学研讨室</td> -->
+				</tr>
+				
+				<tr>
+					<td >134</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >2号楼</td>
+					<td >
+					<font color="#0000FF">X2537</font></td>
+					<td >多媒体</td>
+					<td >120</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">120,毕业设计用</td> -->
+				</tr>
+				
+				<tr>
+					<td >135</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >3号楼</td>
+					<td >
+					<font color="#0000FF">X30301</font></td>
+					<td >多媒体</td>
+					<td >24</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">协作探究型智慧教室</td> -->
+				</tr>
+				
+				<tr>
+					<td >136</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >3号楼</td>
+					<td >
+					<font color="#0000FF">X30302</font></td>
+					<td >多媒体</td>
+					<td >36</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">灵活转换型智慧教室</td> -->
+				</tr>
+				
+				<tr>
+					<td >137</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >3号楼</td>
+					<td >
+					<font color="#0000FF">X30303</font></td>
+					<td >多媒体</td>
+					<td >24</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">协作探究型智慧教室</td> -->
+				</tr>
+				
+				<tr>
+					<td >138</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >3号楼</td>
+					<td >
+					<font color="#0000FF">X30304</font></td>
+					<td >多媒体</td>
+					<td >24</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">灵活转换型智慧教室</td> -->
+				</tr>
+				
+				<tr>
+					<td >139</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >3号楼</td>
+					<td >
+					<font color="#0000FF">X30305</font></td>
+					<td >多媒体</td>
+					<td >42</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">协作探究型智慧教室</td> -->
+				</tr>
+				
+				<tr>
+					<td >140</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >3号楼</td>
+					<td >
+					<font color="#0000FF">X30306</font></td>
+					<td >多媒体</td>
+					<td >28</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">协作探究型智慧教室</td> -->
+				</tr>
+				
+				<tr>
+					<td >141</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >3号楼</td>
+					<td >
+					<font color="#0000FF">X30307</font></td>
+					<td >多媒体</td>
+					<td >24</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">协作探究型智慧教室</td> -->
+				</tr>
+				
+				<tr>
+					<td >142</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >3号楼</td>
+					<td >
+					<font color="#0000FF">X30308</font></td>
+					<td >多媒体</td>
+					<td >24</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">协作探究型智慧教室</td> -->
+				</tr>
+				
+				<tr>
+					<td >143</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >3号楼</td>
+					<td >
+					<font color="#0000FF">X30309</font></td>
+					<td >多媒体</td>
+					<td >24</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">协作探究型智慧教室</td> -->
+				</tr>
+				
+				<tr>
+					<td >144</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >3号楼</td>
+					<td >
+					<font color="#0000FF">X30310</font></td>
+					<td >多媒体</td>
+					<td >42</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">协作探究型智慧教室</td> -->
+				</tr>
+				
+				<tr>
+					<td >145</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >3号楼</td>
+					<td >
+					<font color="#0000FF">X30311</font></td>
+					<td >多媒体</td>
+					<td >24</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">协作探究型智慧教室</td> -->
+				</tr>
+				
+				<tr>
+					<td >146</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >3号楼</td>
+					<td >
+					<font color="#0000FF">X30312</font></td>
+					<td >多媒体</td>
+					<td >47</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">跨区域同步互动教室</td> -->
+				</tr>
+				
+				<tr>
+					<td >147</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >3号楼</td>
+					<td >
+					<font color="#0000FF">X30313</font></td>
+					<td >多媒体</td>
+					<td >24</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">协作探究型智慧教室</td> -->
+				</tr>
+				
+				<tr>
+					<td >148</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >3号楼</td>
+					<td >
+					<font color="#0000FF">X30314</font></td>
+					<td >多媒体</td>
+					<td >30</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">灵活转换型智慧教室</td> -->
+				</tr>
+				
+				<tr>
+					<td >149</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >3号楼</td>
+					<td >
+					<font color="#0000FF">X30316</font></td>
+					<td >多媒体</td>
+					<td >40</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">协作探究型智慧教室</td> -->
+				</tr>
+				
+				<tr>
+					<td >150</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >3号楼</td>
+					<td >
+					<font color="#0000FF">X30378</font></td>
+					<td >多媒体</td>
+					<td >32</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">灵活转换型智慧教室</td> -->
+				</tr>
+				
+				<tr>
+					<td >151</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >3号楼</td>
+					<td >
+					<font color="#0000FF">X30379</font></td>
+					<td >多媒体</td>
+					<td >32</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">灵活转换型智慧教室</td> -->
+				</tr>
+				
+				<tr>
+					<td >152</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >3号楼</td>
+					<td >
+					<font color="#0000FF">X30380</font></td>
+					<td >多媒体</td>
+					<td >32</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">灵活转换型智慧教室</td> -->
+				</tr>
+				
+				<tr>
+					<td >153</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >3号楼</td>
+					<td >
+					<font color="#0000FF">X30381</font></td>
+					<td >多媒体</td>
+					<td >73</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">情景融合式智慧教室</td> -->
+				</tr>
+				
+				<tr>
+					<td >154</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >3号楼</td>
+					<td >
+					<font color="#0000FF">X30382</font></td>
+					<td >多媒体</td>
+					<td >32</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">灵活转换型智慧教室</td> -->
+				</tr>
+				
+				<tr>
+					<td >155</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >3号楼</td>
+					<td >
+					<font color="#0000FF">X30383</font></td>
+					<td >多媒体</td>
+					<td >48</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">协作探究型智慧教室</td> -->
+				</tr>
+				
+				<tr>
+					<td >156</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >3号楼</td>
+					<td >
+					<font color="#0000FF">X30384</font></td>
+					<td >多媒体</td>
+					<td >48</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">协作探究型智慧教室</td> -->
+				</tr>
+				
+				<tr>
+					<td >157</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >3号楼</td>
+					<td >
+					<font color="#0000FF">X30385</font></td>
+					<td >多媒体</td>
+					<td >48</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">协作探究型智慧教室</td> -->
+				</tr>
+				
+				<tr>
+					<td >158</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >3号楼</td>
+					<td >
+					<font color="#0000FF">X30386</font></td>
+					<td >多媒体</td>
+					<td >24</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">灵活转换型智慧教室</td> -->
+				</tr>
+				
+				<tr>
+					<td >159</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >3号楼</td>
+					<td >
+					<font color="#0000FF">X30517</font></td>
+					<td >多媒体</td>
+					<td >75</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=red>不可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">利兹-智慧教室协作探究型智慧教室</td> -->
+				</tr>
+				
+				<tr>
+					<td >160</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >3号楼</td>
+					<td >
+					<font color="#0000FF">X30518</font></td>
+					<td >多媒体</td>
+					<td >75</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=red>不可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">智慧云教室</td> -->
+				</tr>
+				
+				<tr>
+					<td >161</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >3号楼</td>
+					<td >
+					<font color="#0000FF">X30521</font></td>
+					<td >多媒体</td>
+					<td >75</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=red>不可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">协作探究型智慧教室</td> -->
+				</tr>
+				
+				<tr>
+					<td >162</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >4号楼</td>
+					<td >
+					<font color="#0000FF">X4129</font></td>
+					<td >多媒体</td>
+					<td >35</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">教学研讨室</td> -->
+				</tr>
+				
+				<tr>
+					<td >163</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >4号楼</td>
+					<td >
+					<font color="#0000FF">X4130</font></td>
+					<td >多媒体</td>
+					<td >35</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">教学研讨室</td> -->
+				</tr>
+				
+				<tr>
+					<td >164</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >4号楼</td>
+					<td >
+					<font color="#0000FF">X4131</font></td>
+					<td >多媒体</td>
+					<td >35</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">教学研讨室</td> -->
+				</tr>
+				
+				<tr>
+					<td >165</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >4号楼</td>
+					<td >
+					<font color="#0000FF">X4132</font></td>
+					<td >多媒体</td>
+					<td >35</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">教学研讨室</td> -->
+				</tr>
+				
+				<tr>
+					<td >166</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >4号楼</td>
+					<td >
+					<font color="#0000FF">X4133</font></td>
+					<td >多媒体</td>
+					<td >35</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">教学研讨室</td> -->
+				</tr>
+				
+				<tr>
+					<td >167</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >4号楼</td>
+					<td >
+					<font color="#0000FF">X4134</font></td>
+					<td >多媒体</td>
+					<td >35</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">教学研讨室</td> -->
+				</tr>
+				
+				<tr>
+					<td >168</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >4号楼</td>
+					<td >
+					<font color="#0000FF">X4135</font></td>
+					<td >多媒体</td>
+					<td >35</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">教学研讨室</td> -->
+				</tr>
+				
+				<tr>
+					<td >169</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >4号楼</td>
+					<td >
+					<font color="#0000FF">X4136</font></td>
+					<td >多媒体</td>
+					<td >35</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">教学研讨室</td> -->
+				</tr>
+				
+				<tr>
+					<td >170</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >4号楼</td>
+					<td >
+					<font color="#0000FF">X4151</font></td>
+					<td >多媒体</td>
+					<td >165</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">&nbsp;</td> -->
+				</tr>
+				
+				<tr>
+					<td >171</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >4号楼</td>
+					<td >
+					<font color="#0000FF">X4152</font></td>
+					<td >多媒体</td>
+					<td >165</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">&nbsp;</td> -->
+				</tr>
+				
+				<tr>
+					<td >172</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >4号楼</td>
+					<td >
+					<font color="#0000FF">X4153</font></td>
+					<td >多媒体</td>
+					<td >165</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">&nbsp;</td> -->
+				</tr>
+				
+				<tr>
+					<td >173</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >4号楼</td>
+					<td >
+					<font color="#0000FF">X4154</font></td>
+					<td >多媒体</td>
+					<td >165</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">&nbsp;</td> -->
+				</tr>
+				
+				<tr>
+					<td >174</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >4号楼</td>
+					<td >
+					<font color="#0000FF">X4155</font></td>
+					<td >多媒体</td>
+					<td >165</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">&nbsp;</td> -->
+				</tr>
+				
+				<tr>
+					<td >175</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >4号楼</td>
+					<td >
+					<font color="#0000FF">X4156</font></td>
+					<td >多媒体</td>
+					<td >165</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">&nbsp;</td> -->
+				</tr>
+				
+				<tr>
+					<td >176</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >4号楼</td>
+					<td >
+					<font color="#0000FF">X4157</font></td>
+					<td >多媒体</td>
+					<td >165</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">&nbsp;</td> -->
+				</tr>
+				
+				<tr>
+					<td >177</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >4号楼</td>
+					<td >
+					<font color="#0000FF">X4158</font></td>
+					<td >多媒体</td>
+					<td >165</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">&nbsp;</td> -->
+				</tr>
+				
+				<tr>
+					<td >178</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >4号楼</td>
+					<td >
+					<font color="#0000FF">X4350</font></td>
+					<td >多媒体</td>
+					<td >320</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">&nbsp;</td> -->
+				</tr>
+				
+				<tr>
+					<td >179</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >4号楼</td>
+					<td >
+					<font color="#0000FF">X4352</font></td>
+					<td >多媒体</td>
+					<td >320</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">&nbsp;</td> -->
+				</tr>
+				
+				<tr>
+					<td >180</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >4号楼</td>
+					<td >
+					<font color="#0000FF">X4359</font></td>
+					<td >多媒体</td>
+					<td >320</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=red>不可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">利兹排课用320</td> -->
+				</tr>
+				
+				<tr>
+					<td >181</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >5号楼</td>
+					<td >
+					<font color="#0000FF">X5312</font></td>
+					<td >多媒体</td>
+					<td >120</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=red>不可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">&nbsp;</td> -->
+				</tr>
+				
+				<tr>
+					<td >182</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >7号楼</td>
+					<td >
+					<font color="#0000FF">X7101</font></td>
+					<td >多媒体</td>
+					<td >120</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">(120/50)暂时做设计教室</td> -->
+				</tr>
+				
+				<tr>
+					<td >183</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >7号楼</td>
+					<td >
+					<font color="#0000FF">X7102</font></td>
+					<td >多媒体</td>
+					<td >120</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">(120/50)暂时做设计教室</td> -->
+				</tr>
+				
+				<tr>
+					<td >184</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >7号楼</td>
+					<td >
+					<font color="#0000FF">X7201</font></td>
+					<td >多媒体</td>
+					<td >120</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">(120/50)暂时做设计教室</td> -->
+				</tr>
+				
+				<tr>
+					<td >185</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >7号楼</td>
+					<td >
+					<font color="#0000FF">X7202</font></td>
+					<td >多媒体</td>
+					<td >120</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">(120/50)暂时做设计教室</td> -->
+				</tr>
+				
+				<tr>
+					<td >186</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >7号楼</td>
+					<td >
+					<font color="#0000FF">X7301</font></td>
+					<td >多媒体</td>
+					<td >120</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">(120/50)暂时做设计教室</td> -->
+				</tr>
+				
+				<tr>
+					<td >187</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >7号楼</td>
+					<td >
+					<font color="#0000FF">X7302</font></td>
+					<td >多媒体</td>
+					<td >120</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">(120/50)暂时做设计教室</td> -->
+				</tr>
+				
+				<tr>
+					<td >188</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >7号楼</td>
+					<td >
+					<font color="#0000FF">X7309</font></td>
+					<td >多媒体</td>
+					<td >90</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">(90/35)暂时做设计教室</td> -->
+				</tr>
+				
+				<tr>
+					<td >189</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >7号楼</td>
+					<td >
+					<font color="#0000FF">X7310</font></td>
+					<td >多媒体</td>
+					<td >90</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">(90/35)暂时做设计教室</td> -->
+				</tr>
+				
+				<tr>
+					<td >190</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >7号楼</td>
+					<td >
+					<font color="#0000FF">X7401</font></td>
+					<td >多媒体</td>
+					<td >120</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">(120/50)暂时做设计教室</td> -->
+				</tr>
+				
+				<tr>
+					<td >191</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >7号楼</td>
+					<td >
+					<font color="#0000FF">X7402</font></td>
+					<td >多媒体</td>
+					<td >120</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">(120/50)暂时做设计教室</td> -->
+				</tr>
+				
+				<tr>
+					<td >192</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >7号楼</td>
+					<td >
+					<font color="#0000FF">X7409</font></td>
+					<td >多媒体</td>
+					<td >90</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">(90/35)暂时做设计教室</td> -->
+				</tr>
+				
+				<tr>
+					<td >193</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >7号楼</td>
+					<td >
+					<font color="#0000FF">X7410</font></td>
+					<td >多媒体</td>
+					<td >90</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">(90/35)暂时做设计教室</td> -->
+				</tr>
+				
+				<tr>
+					<td >194</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >8号楼</td>
+					<td >
+					<font color="#0000FF">X8215</font></td>
+					<td >多媒体</td>
+					<td >130</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">&nbsp;</td> -->
+				</tr>
+				
+				<tr>
+					<td >195</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >8号楼</td>
+					<td >
+					<font color="#0000FF">X8321</font></td>
+					<td >多媒体</td>
+					<td >130</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">&nbsp;</td> -->
+				</tr>
+				
+				<tr>
+					<td >196</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >8号楼</td>
+					<td >
+					<font color="#0000FF">X8323</font></td>
+					<td >多媒体</td>
+					<td >100</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">&nbsp;</td> -->
+				</tr>
+				
+				<tr>
+					<td >197</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >8号楼</td>
+					<td >
+					<font color="#0000FF">X8514</font></td>
+					<td >多媒体</td>
+					<td >100</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">&nbsp;</td> -->
+				</tr>
+				
+				<tr>
+					<td >198</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >8号楼</td>
+					<td >
+					<font color="#0000FF">X8521</font></td>
+					<td >多媒体</td>
+					<td >99</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">&nbsp;</td> -->
+				</tr>
+				
+				<tr>
+					<td >199</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >8号楼</td>
+					<td >
+					<font color="#0000FF">X8522</font></td>
+					<td >多媒体</td>
+					<td >99</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">&nbsp;</td> -->
+				</tr>
+				
+				<tr>
+					<td >200</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >8号楼</td>
+					<td >
+					<font color="#0000FF">X8523</font></td>
+					<td >多媒体</td>
+					<td >99</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">&nbsp;</td> -->
+				</tr>
+				
+				<tr>
+					<td >201</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >8号楼</td>
+					<td >
+					<font color="#0000FF">X8524</font></td>
+					<td >多媒体</td>
+					<td >99</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">&nbsp;</td> -->
+				</tr>
+				
+				<tr>
+					<td >202</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >8号楼</td>
+					<td >
+					<font color="#0000FF">X8525</font></td>
+					<td >多媒体</td>
+					<td >99</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">&nbsp;</td> -->
+				</tr>
+				
+				<tr>
+					<td >203</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >8号楼</td>
+					<td >
+					<font color="#0000FF">X8526</font></td>
+					<td >多媒体</td>
+					<td >99</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">&nbsp;</td> -->
+				</tr>
+				
+				<tr>
+					<td >204</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >8号楼</td>
+					<td >
+					<font color="#0000FF">X8527</font></td>
+					<td >多媒体</td>
+					<td >100</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">&nbsp;</td> -->
+				</tr>
+				
+				<tr>
+					<td >205</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >8号楼</td>
+					<td >
+					<font color="#0000FF">X8533</font></td>
+					<td >多媒体</td>
+					<td >90</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">&nbsp;</td> -->
+				</tr>
+				
+				<tr>
+					<td >206</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >8号楼</td>
+					<td >
+					<font color="#0000FF">X8535</font></td>
+					<td >多媒体</td>
+					<td >90</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">&nbsp;</td> -->
+				</tr>
+				
+				<tr>
+					<td >207</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >8号楼</td>
+					<td >
+					<font color="#0000FF">X8537</font></td>
+					<td >多媒体</td>
+					<td >90</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">&nbsp;</td> -->
+				</tr>
+				
+				<tr>
+					<td >208</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >8号楼</td>
+					<td >
+					<font color="#0000FF">X8539</font></td>
+					<td >多媒体</td>
+					<td >90</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">&nbsp;</td> -->
+				</tr>
+				
+				<tr>
+					<td >209</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >9号楼</td>
+					<td >
+					<font color="#0000FF">X9202</font></td>
+					<td >多媒体</td>
+					<td >60</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">研讨教室</td> -->
+				</tr>
+				
+				<tr>
+					<td >210</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >9号楼</td>
+					<td >
+					<font color="#0000FF">X9203</font></td>
+					<td >多媒体</td>
+					<td >60</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">研讨教室</td> -->
+				</tr>
+				
+				<tr>
+					<td >211</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >9号楼</td>
+					<td >
+					<font color="#0000FF">X9302</font></td>
+					<td >多媒体</td>
+					<td >60</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">研讨教室</td> -->
+				</tr>
+				
+				<tr>
+					<td >212</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >9号楼</td>
+					<td >
+					<font color="#0000FF">X9303</font></td>
+					<td >多媒体</td>
+					<td >60</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">研讨教室</td> -->
+				</tr>
+				
+				<tr>
+					<td >213</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >9号楼</td>
+					<td >
+					<font color="#0000FF">X9304</font></td>
+					<td >多媒体</td>
+					<td >58</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">座位可移动</td> -->
+				</tr>
+				
+				<tr>
+					<td >214</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >9号楼</td>
+					<td >
+					<font color="#0000FF">X9306</font></td>
+					<td >多媒体</td>
+					<td >75</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=red>不可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">座位可移动,教学容量78，利兹</td> -->
+				</tr>
+				
+				<tr>
+					<td >215</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >9号楼</td>
+					<td >
+					<font color="#0000FF">X9307</font></td>
+					<td >普通</td>
+					<td >60</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=red>不可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">移交研究生院</td> -->
+				</tr>
+				
+				<tr>
+					<td >216</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >9号楼</td>
+					<td >
+					<font color="#0000FF">X9308</font></td>
+					<td >普通</td>
+					<td >60</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=red>不可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">移交研究生院</td> -->
+				</tr>
+				
+				<tr>
+					<td >217</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >9号楼</td>
+					<td >
+					<font color="#0000FF">X9309</font></td>
+					<td >普通</td>
+					<td >25</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=red>不可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">利兹</td> -->
+				</tr>
+				
+				<tr>
+					<td >218</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >9号楼</td>
+					<td >
+					<font color="#0000FF">X9310</font></td>
+					<td >普通</td>
+					<td >25</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=red>不可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">利兹学院</td> -->
+				</tr>
+				
+				<tr>
+					<td >219</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >9号楼</td>
+					<td >
+					<font color="#0000FF">X9311</font></td>
+					<td >普通</td>
+					<td >25</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=red>不可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">利兹</td> -->
+				</tr>
+				
+				<tr>
+					<td >220</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >9号楼</td>
+					<td >
+					<font color="#0000FF">X9312</font></td>
+					<td >普通</td>
+					<td >25</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=red>不可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">利兹</td> -->
+				</tr>
+				
+				<tr>
+					<td >221</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >9号楼</td>
+					<td >
+					<font color="#0000FF">X9313</font></td>
+					<td >普通</td>
+					<td >25</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=red>不可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">利兹</td> -->
+				</tr>
+				
+				<tr>
+					<td >222</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >9号楼</td>
+					<td >
+					<font color="#0000FF">X9314</font></td>
+					<td >普通</td>
+					<td >25</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=red>不可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">&nbsp;</td> -->
+				</tr>
+				
+				<tr>
+					<td >223</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >9号楼</td>
+					<td >
+					<font color="#0000FF">X9315</font></td>
+					<td >普通</td>
+					<td >25</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=red>不可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">利兹</td> -->
+				</tr>
+				
+				<tr>
+					<td >224</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >9号楼</td>
+					<td >
+					<font color="#0000FF">X9316</font></td>
+					<td >普通</td>
+					<td >25</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=red>不可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">&nbsp;</td> -->
+				</tr>
+				
+				<tr>
+					<td >225</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >9号楼</td>
+					<td >
+					<font color="#0000FF">X9317</font></td>
+					<td >多媒体</td>
+					<td >25</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=red>不可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">利兹</td> -->
+				</tr>
+				
+				<tr>
+					<td >226</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >9号楼</td>
+					<td >
+					<font color="#0000FF">X9402</font></td>
+					<td >多媒体</td>
+					<td >60</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">研讨教室</td> -->
+				</tr>
+				
+				<tr>
+					<td >227</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >9号楼</td>
+					<td >
+					<font color="#0000FF">X9403</font></td>
+					<td >多媒体</td>
+					<td >60</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">教学研讨室</td> -->
+				</tr>
+				
+				<tr>
+					<td >228</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >9号楼</td>
+					<td >
+					<font color="#0000FF">X9406</font></td>
+					<td >多媒体</td>
+					<td >75</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=red>不可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">座位可移动,教学容量78，利兹</td> -->
+				</tr>
+				
+				<tr>
+					<td >229</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >9号楼</td>
+					<td >
+					<font color="#0000FF">X9454</font></td>
+					<td >多媒体</td>
+					<td >30</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">座位可移动（30人）,毕业设计用</td> -->
+				</tr>
+				
+				<tr>
+					<td >230</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >9号楼</td>
+					<td >
+					<font color="#0000FF">X9456</font></td>
+					<td >多媒体</td>
+					<td >30</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">座位可移动（不带课桌）,毕业设计用</td> -->
+				</tr>
+				
+				<tr>
+					<td >231</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >9号楼</td>
+					<td >
+					<font color="#0000FF">X9457</font></td>
+					<td >多媒体</td>
+					<td >30</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">座位可移动（不带课桌）,毕业设计用</td> -->
+				</tr>
+				
+				<tr>
+					<td >232</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >9号楼</td>
+					<td >
+					<font color="#0000FF">X9502</font></td>
+					<td >多媒体</td>
+					<td >60</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">教学研讨室</td> -->
+				</tr>
+				
+				<tr>
+					<td >233</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >9号楼</td>
+					<td >
+					<font color="#0000FF">X9503</font></td>
+					<td >多媒体</td>
+					<td >60</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">教学研讨室</td> -->
+				</tr>
+				
+				<tr>
+					<td >234</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >9号楼</td>
+					<td >
+					<font color="#0000FF">X9506</font></td>
+					<td >多媒体</td>
+					<td >100</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=red>不可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">座位可移动（利兹）</td> -->
+				</tr>
+				
+				<tr>
+					<td >235</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >9号楼</td>
+					<td >
+					<font color="#0000FF">X9537</font></td>
+					<td >多媒体</td>
+					<td >30</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">座位可移动（不带课桌）,毕业设计用</td> -->
+				</tr>
+				
+				<tr>
+					<td >236</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >9号楼</td>
+					<td >
+					<font color="#0000FF">X9538</font></td>
+					<td >多媒体</td>
+					<td >30</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">座位可移动（30人）</td> -->
+				</tr>
+				
+				<tr>
+					<td >237</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >9号楼</td>
+					<td >
+					<font color="#0000FF">X9539</font></td>
+					<td >多媒体</td>
+					<td >30</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">座位可移动（30人）,毕业设计用</td> -->
+				</tr>
+				
+				<tr>
+					<td >238</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >9号楼</td>
+					<td >
+					<font color="#0000FF">X9540</font></td>
+					<td >多媒体</td>
+					<td >30</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=blue>可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">座位可移动（30人）,毕业设计用</td> -->
+				</tr>
+				
+				<tr>
+					<td >239</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >三食堂</td>
+					<td >
+					<font color="#0000FF">C300</font></td>
+					<td >普通</td>
+					<td >1000</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=red>不可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">大厅</td> -->
+				</tr>
+				
+				<tr>
+					<td >240</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >三食堂</td>
+					<td >
+					<font color="#0000FF">C304</font></td>
+					<td >多媒体</td>
+					<td >40</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=red>不可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">会议室</td> -->
+				</tr>
+				
+				<tr>
+					<td >241</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >三食堂</td>
+					<td >
+					<font color="#0000FF">C305</font></td>
+					<td >多媒体</td>
+					<td >40</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=red>不可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">&nbsp;</td> -->
+				</tr>
+				
+				<tr>
+					<td >242</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >三食堂</td>
+					<td >
+					<font color="#0000FF">C306</font></td>
+					<td >多媒体</td>
+					<td >40</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=red>不可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">&nbsp;</td> -->
+				</tr>
+				
+				<tr>
+					<td >243</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >三食堂</td>
+					<td >
+					<font color="#0000FF">C307</font></td>
+					<td >多媒体</td>
+					<td >40</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=red>不可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">&nbsp;</td> -->
+				</tr>
+				
+				<tr>
+					<td >244</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >三食堂</td>
+					<td >
+					<font color="#0000FF">C308</font></td>
+					<td >多媒体</td>
+					<td >40</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=red>不可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">机器人基地</td> -->
+				</tr>
+				
+				<tr>
+					<td >245</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >三食堂</td>
+					<td >
+					<font color="#0000FF">C388</font></td>
+					<td >多媒体</td>
+					<td >30</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=red>不可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">咖啡厅</td> -->
+				</tr>
+				
+				<tr>
+					<td >246</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >书院</td>
+					<td >
+					<font color="#0000FF">唐臣书院</font></td>
+					<td >多媒体</td>
+					<td >30</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=red>不可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">唐臣书院</td> -->
+				</tr>
+				
+				<tr>
+					<td >247</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >体育场</td>
+					<td >
+					<font color="#0000FF">北区排球场</font></td>
+					<td >普通</td>
+					<td >100</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=red>不可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">&nbsp;</td> -->
+				</tr>
+				
+				<tr>
+					<td >248</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >体育场</td>
+					<td >
+					<font color="#0000FF">北区体育教室</font></td>
+					<td >普通</td>
+					<td >100</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=red>不可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">&nbsp;</td> -->
+				</tr>
+				
+				<tr>
+					<td >249</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >体育场</td>
+					<td >
+					<font color="#0000FF">北区田径场</font></td>
+					<td >普通</td>
+					<td >500</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=red>不可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">&nbsp;</td> -->
+				</tr>
+				
+				<tr>
+					<td >250</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >体育场</td>
+					<td >
+					<font color="#0000FF">北区足球场</font></td>
+					<td >普通</td>
+					<td >100</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=red>不可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">&nbsp;</td> -->
+				</tr>
+				
+				<tr>
+					<td >251</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >体育场</td>
+					<td >
+					<font color="#0000FF">南区体育场</font></td>
+					<td >普通</td>
+					<td >500</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=red>不可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">&nbsp;</td> -->
+				</tr>
+				
+				<tr>
+					<td >252</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >体育场</td>
+					<td >
+					<font color="#0000FF">南区田径场</font></td>
+					<td >普通</td>
+					<td >1000</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=red>不可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">&nbsp;</td> -->
+				</tr>
+				
+				<tr>
+					<td >253</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >体育场</td>
+					<td >
+					<font color="#0000FF">南区小足球</font></td>
+					<td >普通</td>
+					<td >100</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=red>不可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">&nbsp;</td> -->
+				</tr>
+				
+				<tr>
+					<td >254</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >体育场</td>
+					<td >
+					<font color="#0000FF">犀乒乓球场</font></td>
+					<td >普通</td>
+					<td >500</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=red>不可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">&nbsp;</td> -->
+				</tr>
+				
+				<tr>
+					<td >255</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >体育场</td>
+					<td >
+					<font color="#0000FF">犀浦篮球场</font></td>
+					<td >普通</td>
+					<td >500</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=red>不可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">&nbsp;</td> -->
+				</tr>
+				
+				<tr>
+					<td >256</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >体育场</td>
+					<td >
+					<font color="#0000FF">犀浦排球场</font></td>
+					<td >普通</td>
+					<td >500</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=red>不可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">&nbsp;</td> -->
+				</tr>
+				
+				<tr>
+					<td >257</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >体育场</td>
+					<td >
+					<font color="#0000FF">犀浦网球场</font></td>
+					<td >普通</td>
+					<td >500</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=red>不可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">&nbsp;</td> -->
+				</tr>
+				
+				<tr>
+					<td >258</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >体育场</td>
+					<td >
+					<font color="#0000FF">犀浦足球场</font></td>
+					<td >普通</td>
+					<td >500</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=red>不可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">&nbsp;</td> -->
+				</tr>
+				
+				<tr>
+					<td >259</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >体育场</td>
+					<td >
+					<font color="#0000FF">犀羽毛球场</font></td>
+					<td >普通</td>
+					<td >500</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=red>不可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">&nbsp;</td> -->
+				</tr>
+				
+				<tr>
+					<td >260</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >体育场</td>
+					<td >
+					<font color="#0000FF">北区篮球场</font></td>
+					<td >普通</td>
+					<td >100</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=red>不可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">&nbsp;</td> -->
+				</tr>
+				
+				<tr>
+					<td >261</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >体育场</td>
+					<td >
+					<font color="#0000FF">北区田径场</font></td>
+					<td >普通</td>
+					<td >1000</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=red>不可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">&nbsp;</td> -->
+				</tr>
+				
+				<tr>
+					<td >262</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >体育馆</td>
+					<td >
+					<font color="#0000FF">武术馆</font></td>
+					<td >普通</td>
+					<td >100</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=red>不可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">&nbsp;</td> -->
+				</tr>
+				
+				<tr>
+					<td >263</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >体育馆</td>
+					<td >
+					<font color="#0000FF">北区跆拳道馆</font></td>
+					<td >普通</td>
+					<td >100</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=red>不可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">&nbsp;</td> -->
+				</tr>
+				
+				<tr>
+					<td >264</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >体育馆</td>
+					<td >
+					<font color="#0000FF">电钢教室</font></td>
+					<td >普通</td>
+					<td >30</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=red>不可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">音乐系教室</td> -->
+				</tr>
+				
+				<tr>
+					<td >265</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >体育馆</td>
+					<td >
+					<font color="#0000FF">多功能厅</font></td>
+					<td >多媒体</td>
+					<td >60</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=red>不可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">&nbsp;</td> -->
+				</tr>
+				
+				<tr>
+					<td >266</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >体育馆</td>
+					<td >
+					<font color="#0000FF">啦啦操馆</font></td>
+					<td >普通</td>
+					<td >50</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=red>不可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">&nbsp;</td> -->
+				</tr>
+				
+				<tr>
+					<td >267</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >体育馆</td>
+					<td >
+					<font color="#0000FF">体育馆1102</font></td>
+					<td >多媒体</td>
+					<td >100</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=red>不可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">&nbsp;</td> -->
+				</tr>
+				
+				<tr>
+					<td >268</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >体育馆</td>
+					<td >
+					<font color="#0000FF">羽毛球馆</font></td>
+					<td >普通</td>
+					<td >50</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=red>不可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">&nbsp;</td> -->
+				</tr>
+				
+				<tr>
+					<td >269</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >图书馆</td>
+					<td >
+					<font color="#0000FF">A103</font></td>
+					<td >普通</td>
+					<td >180</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=red>不可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">&nbsp;</td> -->
+				</tr>
+				
+				<tr>
+					<td >270</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >图书馆</td>
+					<td >
+					<font color="#0000FF">A206</font></td>
+					<td >多媒体</td>
+					<td >30</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=red>不可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">&nbsp;</td> -->
+				</tr>
+				
+				<tr>
+					<td >271</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >图书馆</td>
+					<td >
+					<font color="#0000FF">图书馆A220</font></td>
+					<td >多媒体</td>
+					<td >50</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=red>不可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">&nbsp;</td> -->
+				</tr>
+				
+				<tr>
+					<td >272</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >图书馆</td>
+					<td >
+					<font color="#0000FF">图书馆C621B</font></td>
+					<td >多媒体</td>
+					<td >30</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=red>不可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">&nbsp;</td> -->
+				</tr>
+				
+				<tr>
+					<td >273</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >未知</td>
+					<td >
+					<font color="#0000FF">馆外208</font></td>
+					<td >多媒体</td>
+					<td >30</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=red>不可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">&nbsp;</td> -->
+				</tr>
+				
+				<tr>
+					<td >274</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >五食堂</td>
+					<td >
+					<font color="#0000FF">五食堂</font></td>
+					<td >普通</td>
+					<td >30</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=red>不可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#F7FDF2">&nbsp;</td> -->
+				</tr>
+				
+				<tr>
+					<td >275</td>
+					<td >
+					<font color="#000080">犀浦校区</font></td>
+					<td >一食堂</td>
+					<td >
+					<font color="#0000FF">一食堂（舞蹈房）</font></td>
+					<td >普通</td>
+					<td >30</td>
+					<td ><font color=blue>空闲</font></td>
+					<td ><font color=red>不可借</font></td>
+					<td >第10周</td>
+					<td >星期一
+</td>
+					<td >第13节</td>
+					<!-- <td height="25" width="141" align="center" bgColor="#FEFCF5">&nbsp;</td> -->
+				</tr>
+				
+			</table>
+			</div>
+		</div>
+		<!--主要内容区-->
+      
+        <!--
+        	描述：底部导航区
+        -->
+        <div class="full bottom-nav-bg mt20" id="footerNav">
+   <div class="mainBox">
+		<div class="footer-nav-div clearfix">
+			<div class="bottmNavDiv">
+				<p class="f14 fw color-main mb5">热点关注</p>
+				<ul>
+					<li><a href="CourseAction85a6.html?setAction=queryCourseList&amp;selectTableType=ThisTerm" target=_blank>本学期课程表</a></li>
+					<li><a href="CourseAction3bae.html?setAction=queryCourseList&amp;selectTableType=NextTerm" target=_blank>下学期课程表</a></li>
+					<li><a href="TestInfoAction27c1?setAction=TestArrange&amp;selectTableType=Test" target=_blank>期末考试安排</a></li>
+					<li><a href="TestInfoAction8b89.html?setAction=TestArrange&amp;selectTableType=Makeup" target=_blank>补考安排</a></li>
+					<li><a href="PublicInfoQueryAction3850.html?setAction=queryProgram" >培养计划查询</a></li>
+					<li><a href="PublicInfoQueryActionf58d?setAction=queryMajor" >专业目录</a></li>
+					<li><a href="PublicInfoQueryAction3656?setAction=queryCETScore" target=_blank>四六级成绩查询</a></li>
+					<li><a href="CourseAction382f?setAction=queryCourseList&amp;selectTableType=History" target=_blank>历史课程查询</a></li>
+					<li><a href="CourseActionee11.html?setAction=printCourse&amp;termSelect=this" target=_blank>班级、教室课表打印</a></li>
+				</ul>
+			</div>
+			<div class="bottmNavDiv">
+				<p class="f14 fw color-main mb5">信息服务</p>
+				<ul>
+					<li><a href="PublicInfoQueryAction498a?setAction=queryGraduate" >学历查询</a></li>
+					<li><a href="PublicInfoQueryActiona56b.html?setAction=queryCollege" >学院教务信息</a></li>
+					<li><a href="PublicInfoQueryAction11a0?setAction=queryStudent" >学生信息查询</a></li>
+					<li><a href="PublicInfoQueryAction8979.html?setAction=queryTeacher" >教师信息查询</a></li>
+					<li><a href="PublicInfoQueryAction6280?setAction=queryCourse" >课程代码查询</a></li>
+					<li><a href="PublicInfoQueryActionb1c0?setAction=queryClass" >班级信息查询</a></li>
+					<li><a href="PublicInfoQueryAction0625?setAction=queryClassroom" >教室信息查询</a></li>
+					<li><a href="CourseAction9ee3?setAction=classroomStatus">教室使用状态</a></li>
+				</ul>
+			</div>
+			<div class="bottmNavDiv">
+				<p class="f14 fw color-main mb5">办事指南</p>
+				<ul>
+					<li><a href="../web/deanPerson18bd.html?pageLink=deanPerson" >工作人员介绍</a></li>
+					<li><a href="../web/deanWork08aa.html?pageLink=deanWork" >办事流程</a></li>
+					<li><a href="../web/deanPhone390e.html?pageLink=deanPhone" >教务处电话</a></li>
+					<li><a href="RuleActionf560.html?setAction=RuleMore&amp;type=form" >管理规章制度</a></li>
+					<li><a href="WebFileAction7fe5.html?setAction=FileMore&amp;type=form" >办事常用表格</a></li>
+					<li><a href="ClassroomBorrowInfoAction9e2b?setAction=classroomLendList" target=_blank>教室借用信息查询</a></li>
+					<li><a href="ClassroomBorrowInfoActionad02?setAction=classroomUseChart" target=_blank>教室使用图示</a></li>
+				</ul>
+			</div>
+			<div class="bottmNavDiv">
+				<p class="f14 fw color-main mb5">常用表格</p>
+				<ul>
+					<li><a href="WebAction49e2?setAction=download&amp;fileType=file&amp;fileId=326BFA8145A2016A" target=_blank>期末试卷模板</a></li>
+					<li><a href="../download/file/20160914110719794.doc?setAction=download&amp;fileType=file&amp;fileId=18E00963806A89BA" target=_blank>教师调课申请表</a></li>
+					<li><a href="WebActioneb5f.html?setAction=download&amp;fileType=file&amp;fileId=1EA32E57AB14E5BA" target=_blank>学生休学申请表</a></li>
+					<li><a href="WebAction40fa?setAction=download&amp;fileType=file&amp;fileId=CA2079BF6A8151BB" target=_blank>学生复学申请表</a></li>
+					<li><a href="../download/file/20190513094723866.doc?setAction=download&amp;fileType=file&amp;fileId=BAB0389DD6819732" target=_blank>学生退学申请表</a></li>
+					<li><a href="../download/file/20170908170424253.doc?setAction=download&amp;fileType=file&amp;fileId=D54546309E97CBDF" target=_blank>超学分选课申请表</a></li>
+					<li><a href="WebActionb3fb?setAction=download&amp;fileType=file&amp;fileId=0380707C53D59CD4" target=_blank>成绩复议申请表</a></li>
+					<li><a href="WebAction3249?setAction=download&amp;fileType=file&amp;fileId=0AE8F7CF1E96E9A7" target=_blank>游学创新实践学分申请表</a></li>
+					<li><a href="WebAction5cc8?setAction=download&amp;fileType=file&amp;fileId=3FA089F9B836F454" target=_blank>本科生课程替代申请表</a></li>
+				</ul>
+			</div>
+			<div class="bottmNavDiv">
+				<p class="f15 fw color-main mb5">推荐链接</p>
+				<ul>
+					<li><a href="http://www.swjtu.edu.cn/" target=_blank>西南交通大学</a></li>
+					<li><a href="http://yz.swjtu.edu.cn/" target=_blank>西南交通大学研究生招生网</a></li>
+					<li><a href="http://lib.swjtu.edu.cn/" target=_blank>西南交通大学图书馆</a></li>
+					<li><a href="WebActiondb1b?setAction=leedsIndex" target=_blank>西南交大利兹学院教学平台</a></li>
+					<li><a href="http://www.stuvip.com/" target=_blank>西南交通大学第二课堂</a></li>
+					<li><a href="http://www.icourse163.org/" target=_blank>中国大学MOOC</a></li>
+					<li><a href="http://www.xuetangx.com/" target=_blank>学堂在线</a></li>
+					<li><a href="https://www.coursera.org/" target=_blank>Coursera慕课平台</a></li>
+				</ul>
+			</div>
+			<div class="bottmNavDiv2">
+				<div class="btmNavLinkBtn"><a href="http://www.chsi.cn/" target=_blank>教育部学信网</a></div>
+				<div class="btmNavLinkBtn"><a href="http://www.cdgdc.edu.cn/" target=_blank>学位与研究生教育信息网</a></div>
+				<div class="btmNavLinkBtn"><a href="SyllabusAction26f2?setAction=publicOutLine" target=_blank>课程大纲</a></div>
+				<div class="btmNavLinkBtn"><a href="SyllabusActionc9bb?setAction=publicSyllabus" target=_blank>课程执行大纲</a></div>
+				<div class="btmNavLinkBtn"><a href="https://wannianli.tianqi.com/" target=_blank>万年历</a></div>
+			</div>
+		</div>
+	</div></div>
+        <!--
+        	描述：底部导航区
+        -->
+        <!--
+        	描述：footer底部内容区
+        -->
+        <div class="full header-bg" id="footerInfo">
+   <div class="mainBox">
+		<div class="footer mt2082803 clearfix">
+			<div class="fl mt30"><img src="../images/web/icon/index_logo2.png" alt="VATUU为途教学信息服务平台" /></div>
+			<div class="fr">
+				<p class="mt30">电话联系学校教务部门请点击此处<a href="WebActionb50d?setAction=commonList&amp;viewType=view&amp;infoType=detail&amp;infoIndex=36A0F9DAB7403C19">查阅号码</a>，您也可以通过<a href="#">新浪微博</a>或关注官方微信联系我们，如您有对系统的建议，请发至：<a href="mailto:vip@vatuu.com" style="color:#ffffff;">vip@vatuu.com</a></p>
+				<p class="mt10"> © 2018  教学信息服务平台由<a href="http://www.vatuu.com/" target=_blank>VATUU为途</a>提供技术支持&nbsp;&nbsp;网站备案号：<a href="http://www.miitbeian.gov.cn/" target=_blank>蜀ICP备15026398号</a>&nbsp;&nbsp; <img src="../images/web/icon/baidu_icon.jpg" class="pos-relative-5"/></p>
+			</div>
+		</div>
+	</div></div>
+         <!--
+        	描述：footer底部内容区
+        -->
+<script src="../js/jquery/1.12.4/jquery.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/web/load.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/web/baidu.js" type="text/javascript" charset="utf-8"></script>
+<script>
+var xmlHttp;
+
+function createXMLHttpRequest()
+{
+   if(window.ActiveXObject)
+   {
+       xmlHttp=new ActiveXObject("Microsoft.XMLHTTP");
+   }
+   else if(window.XMLHttpRequest)
+   {
+       xmlHttp=new XMLHttpRequest();
+   }
+}
+//获取校区
+function ViewSchoolAreaInfo()
+{
+	var url="../vatuu/AjaxXML?selectType=SchoolAreaInfo";
+    createXMLHttpRequest();
+    xmlHttp.onreadystatechange=SchoolAreaInfoChange;
+    xmlHttp.open("GET",url,true);
+    xmlHttp.send(null);
+}
+function SchoolAreaInfoChange()
+{
+   if(xmlHttp.readyState==4)
+   {
+       if(xmlHttp.status==200)
+       {
+           updateSchoolAreaInfo();
+       }
+   }
+}
+
+function updateSchoolAreaInfo()
+{
+	var select_state=xmlHttp.responseXML.getElementsByTagName("select_state")[0].firstChild.nodeValue;
+	if(select_state=="1"){
+		clearModelsList("school_area_code");
+	    var school_area_code=xmlHttp.responseXML.getElementsByTagName("school_area_code");
+	    var school_area=xmlHttp.responseXML.getElementsByTagName("school_area");
+	    var option=null;
+	    document.getElementById("school_area_code").options[document.getElementById("school_area_code").length] = new Option("选择校区","2");
+	    for(var i=0;i<school_area_code.length;i++)
+	    {
+	        document.getElementById("school_area_code").options[document.getElementById("school_area_code").length] = new Option(school_area[i].firstChild.nodeValue,school_area_code[i].firstChild.nodeValue);
+	    }
+	}
+    
+
+}
+
+//查找教学楼
+function ViewBuildingInfo()
+{
+    var school_area_code=document.form1.school_area_code[document.form1.school_area_code.selectedIndex].value;
+    var url="../vatuu/AjaxXML?selectType=ClassroomBuilding&key="+school_area_code;
+    createXMLHttpRequest();
+    xmlHttp.onreadystatechange=BuildingInfo;
+    xmlHttp.open("GET",url,true);
+    xmlHttp.send(null);
+}
+function BuildingInfo()
+{
+   if(xmlHttp.readyState==4)
+   {
+       if(xmlHttp.status==200)
+       {
+           updateBuildingInfo();
+       }
+   }
+}
+function updateBuildingInfo()
+{
+	var select_state=xmlHttp.responseXML.getElementsByTagName("select_state")[0].firstChild.nodeValue;
+	if(select_state=="1"){
+		clearModelsList("building");
+	    var bid=xmlHttp.responseXML.getElementsByTagName("bid");
+	    var building=xmlHttp.responseXML.getElementsByTagName("building");
+	    var option=null;
+	    document.form1.building.options[document.form1.building.length] = new Option("教学楼","");
+	    var building_name="";
+	    for(var i=0;i<building.length;i++)
+	    {
+	    	building_name=building[i].firstChild.nodeValue;
+	        document.form1.building.options[document.form1.building.length] = new Option(building_name,bid[i].firstChild.nodeValue);
+	    }
+	}
+    
+}
+
+function clearModelsList(name)
+{
+    var models;
+    models=document.getElementById(name);
+    while(models.childNodes.length>0)
+    {
+        models.removeChild(models.childNodes[0]);
+    }
+}
+
+function UpdateFromTime()
+{
+	var time_text="";
+	var k=0;
+	for(var i=1;i<=13;i++){
+		//alert(document.getElementById("week"+i).value);
+		
+		if(document.getElementById("day_time"+i).checked){
+			time_text="1"+time_text;
+		}
+		else{
+			time_text="0"+time_text;
+		}
+		
+	}
+	document.getElementById("day_time_text").value=time_text;
+	//alert(time_text);
+	
+}
+</script>
+
+<script>
+document.form1.week_no.value="512";
+document.form1.day_no.value="1";
+var day_time="1000000000000";
+var k=0;
+for(var i=day_time.length;i>0;i--){
+	if(day_time.substring(k,k+1)=="1"){
+		document.getElementById("day_time"+i).checked=true;
+	}
+	else{
+		document.getElementById("day_time"+i).checked=false;
+	}
+	k++;
+}
+</script>
+
+</body>
+
+<!-- Mirrored from jwc.swjtu.edu.cn/vatuu/CourseAction?setAction=classroomQuery by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 03 May 2021 13:51:07 GMT -->
+</html>
+
